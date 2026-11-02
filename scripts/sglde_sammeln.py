@@ -22,6 +22,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kickbase import Api, ApiFehler, ORDNER, bild_url, bild_laden  # noqa: E402
+from sglde_auswerten import berlin_offset, berlin_nach_utc  # noqa: E402
 
 CONFIG = os.path.join(ORDNER, "config", "sglde.json")
 DATEN = os.path.join(ORDNER, "liga", "daten")
@@ -29,7 +30,10 @@ BILDER = os.path.join(ORDNER, "liga", "bilder")
 # Aktionsarten Saison 26/27 (aus /v4/live/eventtypes, mit Ergebnissen ST 7 abgeglichen)
 TOR_CODES = {4285, 4288, 4291, 4294, 4045}      # Goal (GK/MF/DEF/ST), Penalty scored
 ASSIST_CODES = {4297, 4300, 4303, 4306}         # Assist (GK/DEF/MF/ST)
-FERTIG_NACH_STUNDEN = 30   # Spieltag gilt als abgeschlossen 30 h nach dem letzten Anstoss
+# Kickbase rechnet am Tag nach dem letzten Spiel um 18 Uhr (Ortszeit) ab.
+# Ein Spieltag gilt als abgeschlossen ab Abrechnung + 1 Stunde (normal Montag 19 Uhr).
+ABRECHNUNG_UHR = 18
+FERTIG_NACH_ABRECHNUNG_MIN = 60
 NACHKONTROLLE_TAGE = 3     # abgeschlossene Spieltage werden so lange noch neu geholt
 
 
@@ -65,7 +69,9 @@ def spieltage_auswerten(spielplan, jetzt):
         anstoesse = sorted(zeit(m["dt"]) for m in md.get("it", []) if m.get("dt"))
         if not st or not anstoesse:
             continue
-        fertig_ab = anstoesse[-1] + datetime.timedelta(hours=FERTIG_NACH_STUNDEN)
+        lokal = anstoesse[-1] + berlin_offset(anstoesse[-1])
+        abrechnung = (lokal + datetime.timedelta(days=1)).replace(hour=ABRECHNUNG_UHR, minute=0, second=0)
+        fertig_ab = berlin_nach_utc(abrechnung) + datetime.timedelta(minutes=FERTIG_NACH_ABRECHNUNG_MIN)
         info[st] = {"start": anstoesse[0].isoformat() + "Z",
                     "letzter_anstoss": anstoesse[-1].isoformat() + "Z",
                     "fertig_ab": fertig_ab.isoformat() + "Z",

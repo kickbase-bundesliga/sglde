@@ -5,7 +5,7 @@ Tabelle, Abgabeliste, Bumstabelle, Managerprofile, Transfers und Aufstellungen d
 Webseite: https://kickbase-bundesliga.github.io/sglde/
 
 ## Online (GitHub)
-- Workflow **SGLDE** (Reiter "Actions") laeuft taeglich frueh morgens und dienstags kurz nach der Abgabefrist (22 Uhr): holt neue Daten, speichert sie im Repository und veroeffentlicht die Webseite.
+- Workflow **SGLDE** (Reiter "Actions") laeuft taeglich ca. 19 Uhr (1 h nach der Kickbase-Abrechnung um 18 Uhr), morgens zur Nachkontrolle und dienstags kurz nach der Abgabefrist (22 Uhr): holt neue Daten, speichert sie im Repository und veroeffentlicht die Webseite.
 - Manuell: Actions -> SGLDE -> Run workflow. Haken "Nur Webseite neu bauen" = ohne Kickbase-Abruf.
 - Aenderungen an `config/` oder `scripts/` (auch direkt auf github.com) bauen die Webseite automatisch neu.
 - Secrets (Settings -> Secrets and variables -> Actions): `PRIVAT_EMAIL`, `PRIVAT_PASSWORT` (privater Account, Mitglied der Liga).

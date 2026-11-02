@@ -5,7 +5,8 @@ name: SGLDE
 
 on:
   schedule:
-    - cron: "13 6 * * *"     # taeglich ca. 7:13 Uhr (Winterzeit) / 8:13 Uhr (Sommerzeit)
+    - cron: "7 18 * * *"     # taeglich ca. 19:07 Uhr (Winterzeit) / 20:07 Uhr (Sommerzeit): kurz nach der Abrechnung (18 Uhr) + 1 h
+    - cron: "13 6 * * *"     # taeglich ca. 7:13 Uhr: Nachkontrolle
     - cron: "37 21 * * 2"    # dienstags ca. 22:37 Uhr (Winterzeit): Stand direkt nach der Abgabefrist
   workflow_dispatch:
     inputs:
