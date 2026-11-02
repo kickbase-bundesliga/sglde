@@ -1,0 +1,13 @@
+# Zugangsdaten - NIE hochladen (config/privat.txt)
+config/*.txt
+
+# Wird gebaut (lokal mit start.bat, online per Workflow)
+liga/webseite/
+liga/vorschau.html
+liga/daten/auswertung.json
+
+# API-Rohdaten, Archive, Python
+api_dump/
+*.zip
+__pycache__/
+*.pyc

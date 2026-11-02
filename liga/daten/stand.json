@@ -1,0 +1,256 @@
+{
+ "fertige": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "lauf": "2026-10-27T19:01:29.862526Z",
+ "laufend": [],
+ "spieltage": {
+  "1": {
+   "begonnen": true,
+   "fertig": true,
+   "fertig_ab": "2026-08-31T21:30:00Z",
+   "letzter_anstoss": "2026-08-30T15:30:00Z",
+   "start": "2026-08-28T18:30:00Z"
+  },
+  "2": {
+   "begonnen": true,
+   "fertig": true,
+   "fertig_ab": "2026-09-07T21:30:00Z",
+   "letzter_anstoss": "2026-09-06T15:30:00Z",
+   "start": "2026-09-04T18:30:00Z"
+  },
+  "3": {
+   "begonnen": true,
+   "fertig": true,
+   "fertig_ab": "2026-09-14T21:30:00Z",
+   "letzter_anstoss": "2026-09-13T15:30:00Z",
+   "start": "2026-09-11T18:30:00Z"
+  },
+  "4": {
+   "begonnen": true,
+   "fertig": true,
+   "fertig_ab": "2026-09-21T23:30:00Z",
+   "letzter_anstoss": "2026-09-20T17:30:00Z",
+   "start": "2026-09-18T18:30:00Z"
+  },
+  "5": {
+   "begonnen": true,
+   "fertig": true,
+   "fertig_ab": "2026-10-12T21:30:00Z",
+   "letzter_anstoss": "2026-10-11T15:30:00Z",
+   "start": "2026-10-09T18:30:00Z"
+  },
+  "6": {
+   "begonnen": true,
+   "fertig": true,
+   "fertig_ab": "2026-10-19T21:30:00Z",
+   "letzter_anstoss": "2026-10-18T15:30:00Z",
+   "start": "2026-10-16T18:30:00Z"
+  },
+  "7": {
+   "begonnen": true,
+   "fertig": true,
+   "fertig_ab": "2026-10-26T22:30:00Z",
+   "letzter_anstoss": "2026-10-25T16:30:00Z",
+   "start": "2026-10-23T18:30:00Z"
+  },
+  "8": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2026-11-02T22:30:00Z",
+   "letzter_anstoss": "2026-11-01T16:30:00Z",
+   "start": "2026-10-30T19:30:00Z"
+  },
+  "9": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2026-11-10T00:30:00Z",
+   "letzter_anstoss": "2026-11-08T18:30:00Z",
+   "start": "2026-11-06T19:30:00Z"
+  },
+  "10": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2026-11-23T22:30:00Z",
+   "letzter_anstoss": "2026-11-22T16:30:00Z",
+   "start": "2026-11-20T19:30:00Z"
+  },
+  "11": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2026-12-01T00:30:00Z",
+   "letzter_anstoss": "2026-11-29T18:30:00Z",
+   "start": "2026-11-27T19:30:00Z"
+  },
+  "12": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2026-12-06T19:30:00Z",
+   "letzter_anstoss": "2026-12-05T13:30:00Z",
+   "start": "2026-12-05T13:30:00Z"
+  },
+  "13": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2026-12-13T19:30:00Z",
+   "letzter_anstoss": "2026-12-12T13:30:00Z",
+   "start": "2026-12-12T13:30:00Z"
+  },
+  "14": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2026-12-20T19:30:00Z",
+   "letzter_anstoss": "2026-12-19T13:30:00Z",
+   "start": "2026-12-19T13:30:00Z"
+  },
+  "15": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-01-10T19:30:00Z",
+   "letzter_anstoss": "2027-01-09T13:30:00Z",
+   "start": "2027-01-09T13:30:00Z"
+  },
+  "16": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-01-14T19:30:00Z",
+   "letzter_anstoss": "2027-01-13T13:30:00Z",
+   "start": "2027-01-13T13:30:00Z"
+  },
+  "17": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-01-17T19:30:00Z",
+   "letzter_anstoss": "2027-01-16T13:30:00Z",
+   "start": "2027-01-16T13:30:00Z"
+  },
+  "18": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-01-24T19:30:00Z",
+   "letzter_anstoss": "2027-01-23T13:30:00Z",
+   "start": "2027-01-23T13:30:00Z"
+  },
+  "19": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-01-31T19:30:00Z",
+   "letzter_anstoss": "2027-01-30T13:30:00Z",
+   "start": "2027-01-30T13:30:00Z"
+  },
+  "20": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-02-07T19:30:00Z",
+   "letzter_anstoss": "2027-02-06T13:30:00Z",
+   "start": "2027-02-06T13:30:00Z"
+  },
+  "21": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-02-14T19:30:00Z",
+   "letzter_anstoss": "2027-02-13T13:30:00Z",
+   "start": "2027-02-13T13:30:00Z"
+  },
+  "22": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-02-21T19:30:00Z",
+   "letzter_anstoss": "2027-02-20T13:30:00Z",
+   "start": "2027-02-20T13:30:00Z"
+  },
+  "23": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-02-28T19:30:00Z",
+   "letzter_anstoss": "2027-02-27T13:30:00Z",
+   "start": "2027-02-27T13:30:00Z"
+  },
+  "24": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-03-04T19:30:00Z",
+   "letzter_anstoss": "2027-03-03T13:30:00Z",
+   "start": "2027-03-03T13:30:00Z"
+  },
+  "25": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-03-07T19:30:00Z",
+   "letzter_anstoss": "2027-03-06T13:30:00Z",
+   "start": "2027-03-06T13:30:00Z"
+  },
+  "26": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-03-14T19:30:00Z",
+   "letzter_anstoss": "2027-03-13T13:30:00Z",
+   "start": "2027-03-13T13:30:00Z"
+  },
+  "27": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-03-21T19:30:00Z",
+   "letzter_anstoss": "2027-03-20T13:30:00Z",
+   "start": "2027-03-20T13:30:00Z"
+  },
+  "28": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-04-04T19:30:00Z",
+   "letzter_anstoss": "2027-04-03T13:30:00Z",
+   "start": "2027-04-03T13:30:00Z"
+  },
+  "29": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-04-11T19:30:00Z",
+   "letzter_anstoss": "2027-04-10T13:30:00Z",
+   "start": "2027-04-10T13:30:00Z"
+  },
+  "30": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-04-18T19:30:00Z",
+   "letzter_anstoss": "2027-04-17T13:30:00Z",
+   "start": "2027-04-17T13:30:00Z"
+  },
+  "31": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-04-25T19:30:00Z",
+   "letzter_anstoss": "2027-04-24T13:30:00Z",
+   "start": "2027-04-24T13:30:00Z"
+  },
+  "32": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-05-09T19:30:00Z",
+   "letzter_anstoss": "2027-05-08T13:30:00Z",
+   "start": "2027-05-08T13:30:00Z"
+  },
+  "33": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-05-16T19:30:00Z",
+   "letzter_anstoss": "2027-05-15T13:30:00Z",
+   "start": "2027-05-15T13:30:00Z"
+  },
+  "34": {
+   "begonnen": false,
+   "fertig": false,
+   "fertig_ab": "2027-05-23T19:30:00Z",
+   "letzter_anstoss": "2027-05-22T13:30:00Z",
+   "start": "2027-05-22T13:30:00Z"
+  }
+ },
+ "st_geholt": {
+  "7": "2026-10-27T19:01:29.862526Z"
+ }
+}

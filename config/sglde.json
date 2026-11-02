@@ -1,0 +1,78 @@
+{
+  "name": "SGLDE 4.1 HR 26/27",
+  "liga_id": 4112495,
+  "zugang": "privat",
+  "wettbewerb": 1,
+  "saison": "26/27 HR",
+  "spieltage": {
+    "von": 1,
+    "bis": 14,
+    "_hinweis": "Hinrunde bis Winterpause: ST 14 am 19.12.2026, ST 15 erst am 09.01.2027"
+  },
+  "admin_ids": [],
+  "regeln": {
+    "budget": "variiert",
+    "kader": 14,
+    "max_je_verein": 2,
+    "draft_runden": 11,
+    "underpay": false,
+    "boni": false
+  },
+  "abgabe": {
+    "_hinweis": "Nur aufgestellte Spieler (Startelf). Gleichstand an der Grenze -> alle punktgleichen Spieler zaehlen dazu (Erweiterung). Je Manager und Spieltag nur EINE Pflicht (die strengste).",
+    "stufen": [
+      {
+        "name": "Top 3 des Spieltags",
+        "art": "platz",
+        "plaetze": 3,
+        "top": 3,
+        "anzahl": 1
+      },
+      {
+        "name": "1000+",
+        "art": "punkte",
+        "ab": 1000,
+        "top": 3,
+        "anzahl": 1
+      },
+      {
+        "name": "800+",
+        "art": "punkte",
+        "ab": 800,
+        "top": 5,
+        "anzahl": 1
+      }
+    ],
+    "nur_an_markt": true,
+    "_markt": "Verkauf an einen Mitmanager zaehlt nicht -> es muss ein anderer Spieler aus der Auswahl an den Markt.",
+    "frist": {
+      "wochenende": "Di 22:00",
+      "_hinweis": "22 Uhr am Tag nach der Spieltagsabrechnung; in ST 1-14 gibt es keine englische Woche"
+    },
+    "strafe": {
+      "art": "zusatzverkauf",
+      "_regel": "Nach der Frist muss zusaetzlich ein Spieler aus der aufgestellten Elf (noch im Kader) an den Markt, je weiteren angefangenen Tag ein weiterer."
+    }
+  },
+  "ausnahmen": [
+    {
+      "st": 5,
+      "manager": "1579476",
+      "name": "kianrm9",
+      "grund": "Sonderregelung: -250 Punkte (21.10.) statt Strafverkaeufen – in einer Woche nicht abgegeben, in der anderen gerade noch rechtzeitig."
+    },
+    {
+      "st": 6,
+      "manager": "1579476",
+      "name": "kianrm9",
+      "grund": "Sonderregelung: -250 Punkte (21.10.) statt Strafverkaeufen – in einer Woche nicht abgegeben, in der anderen gerade noch rechtzeitig."
+    }
+  ],
+  "korrekturen": [],
+  "bumstabelle": {
+    "_regel": "Alle Bundesliga-Punkte eines abgegebenen Spielers ab der Abgabe zaehlen, bis er wieder im Kader des abgebenden Managers ist UND dort aufgestellt wird."
+  },
+  "_admin_hinweis": "WaveDaBreaker ist Liga-Admin, spielt aber mit und zaehlt normal. admin_ids nur fuer Accounts, die NICHT gewertet werden.",
+  "transfers_ab": "2026-08-01",
+  "_transfers_ab_hinweis": "Transfers vor diesem Datum (Vorsaison) werden ignoriert. Muss vor dem Draft liegen."
+}

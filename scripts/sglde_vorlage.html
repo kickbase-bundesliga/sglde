@@ -1,0 +1,483 @@
+<title>SGLDE 4.1</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: Trophaeen-Vitrine - dunkler Grund, Gold nur fuer Rang, Sieg und Auswahl; Inhalte als ruhige Tafeln */
+:root {
+  --grund: #121210; --flaeche: #1b1b17; --flaeche2: #24231e; --linie: #34322a;
+  --text: #ece8da; --leise: #a29e8c; --gold: #c9b052; --gold-tief: #8a7631;
+  --gut: #74b77a; --warn: #d8a243; --schlecht: #d9705e; --info: #7fa6c9;
+  --f-titel: "Saira Condensed", "Arial Narrow", sans-serif;
+  --f-text: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --f-zahl: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --grund: #f5f3ec; --flaeche: #ffffff; --flaeche2: #ece8dc; --linie: #d8d2c0;
+  --text: #1d1c17; --leise: #6a6655; --gold: #8f7520; --gold-tief: #c9b052;
+  --gut: #2f7d3a; --warn: #9a6a0c; --schlecht: #b2402e; --info: #2f5f8a; color-scheme: light } }
+:root[data-theme="light"] {
+  --grund: #f5f3ec; --flaeche: #ffffff; --flaeche2: #ece8dc; --linie: #d8d2c0;
+  --text: #1d1c17; --leise: #6a6655; --gold: #8f7520; --gold-tief: #c9b052;
+  --gut: #2f7d3a; --warn: #9a6a0c; --schlecht: #b2402e; --info: #2f5f8a; color-scheme: light }
+
+* { box-sizing: border-box }
+body { background: var(--grund); color: var(--text); font: 15px/1.5 var(--f-text); margin: 0 }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--grund) }
+.rahmen { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px }
+h1, h2, h3 { font-family: var(--f-titel); font-weight: 700; letter-spacing: .02em; text-wrap: balance; margin: 0 }
+h2 { font-size: 1.55rem; text-transform: uppercase }
+h3 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: .06em; color: var(--gold) }
+a { color: var(--gold) }
+.zahl { font-family: var(--f-zahl); font-variant-numeric: tabular-nums }
+.leise { color: var(--leise) }
+.klein { font-size: .82rem }
+
+/* Kopf */
+header.kopf { display: flex; align-items: center; gap: 18px; padding-block: 22px 14px }
+header.kopf img { width: 76px; height: 76px; object-fit: contain; flex: none }
+header.kopf h1 { font-size: clamp(1.9rem, 5vw, 2.9rem); line-height: 1; font-weight: 800; text-transform: uppercase }
+header.kopf .unter { color: var(--leise); font-size: .9rem; margin-top: 4px }
+nav.reiter { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--grund); border-bottom: 1px solid var(--linie); display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; margin-bottom: 22px }
+nav.reiter a { font-family: var(--f-titel); font-size: 1.02rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--leise); text-decoration: none; padding: 12px 12px 10px; border-bottom: 3px solid transparent; white-space: nowrap }
+nav.reiter a:hover { color: var(--text) }
+nav.reiter a.aktiv { color: var(--gold); border-bottom-color: var(--gold) }
+a:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px }
+
+/* Bausteine */
+.raster { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)) }
+.tafel { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 6px; padding: 18px; min-width: 0 }
+.tafel > h3 { margin-bottom: 12px }
+.kopfzeile { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; margin-bottom: 14px }
+.stapel { display: grid; gap: 18px }
+.scroll { overflow-x: auto }
+table { border-collapse: collapse; width: 100%; font-size: .92rem }
+th { font-family: var(--f-titel); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: .78rem; color: var(--leise); text-align: left; padding: 8px 8px; border-bottom: 1px solid var(--linie); white-space: nowrap }
+td { padding: 7px 8px; border-bottom: 1px solid var(--linie); white-space: nowrap }
+td.r, th.r { text-align: right }
+tr.klickbar { cursor: pointer }
+tr.klickbar:hover td { background: var(--flaeche2) }
+.mgr { display: inline-flex; align-items: center; gap: 8px; min-width: 0 }
+.mgr img, .mgr .ini { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; flex: none; background: var(--flaeche2) }
+.mgr .ini { display: inline-grid; place-items: center; font: 700 .7rem var(--f-titel); color: var(--leise) }
+.rang { font-family: var(--f-titel); font-weight: 800; font-size: 1.05rem; width: 1.6em; display: inline-block }
+.rang.r1 { color: var(--gold) }
+.trend { font-family: var(--f-zahl); font-size: .78rem }
+.trend.hoch { color: var(--gut) } .trend.runter { color: var(--schlecht) }
+select, button { font: 500 .9rem var(--f-text); background: var(--flaeche2); color: var(--text); border: 1px solid var(--linie); border-radius: 4px; padding: 6px 10px }
+button { cursor: pointer }
+button.an { background: var(--gold); color: var(--grund); border-color: var(--gold) }
+.wahl { display: flex; flex-wrap: wrap; gap: 6px; align-items: center }
+.pille { display: inline-block; font: 600 .74rem var(--f-text); text-transform: uppercase; letter-spacing: .05em; padding: 2px 8px; border-radius: 99px; border: 1px solid currentColor; white-space: nowrap }
+.p-erledigt { color: var(--gut) } .p-offen { color: var(--info) } .p-verspaetet { color: var(--warn) }
+.p-ueberfaellig { color: var(--schlecht) } .p-ausnahme { color: var(--leise) }
+.chip { display: inline-flex; gap: 6px; align-items: baseline; padding: 3px 9px; border-radius: 4px; background: var(--flaeche2); font-size: .86rem; border: 1px solid transparent }
+.chip.markt { border-color: var(--gut) } .chip.manager { border-color: var(--schlecht); text-decoration: line-through }
+.chips { display: flex; flex-wrap: wrap; gap: 6px }
+
+/* Uebersicht */
+.kennzahlen { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px }
+.kz .wert { font: 700 1.6rem/1.1 var(--f-titel) }
+.kz .bez { font-size: .78rem; color: var(--leise); text-transform: uppercase; letter-spacing: .06em }
+.rekorde { display: grid; gap: 10px }
+.rekord { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding-bottom: 10px; border-bottom: 1px solid var(--linie) }
+.rekord:last-child { border-bottom: 0 }
+.rekord .t { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--leise) }
+.rekord .w { font: 700 1.3rem var(--f-titel); color: var(--gold); grid-row: span 2; align-self: center }
+
+/* Diagramm */
+.diagramm svg { width: 100%; height: auto; display: block }
+.diagramm text { fill: var(--leise); font: 11px var(--f-zahl) }
+.legende { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px }
+.legende button { font-size: .8rem; padding: 3px 9px; display: inline-flex; align-items: center; gap: 6px }
+.legende .punkt { width: 10px; height: 10px; border-radius: 50%; display: inline-block }
+
+/* Platz-Matrix */
+.matrix td.feld { text-align: center; font-family: var(--f-zahl); font-size: .82rem; padding: 6px 4px; min-width: 34px }
+
+/* Aufstellung */
+.platz { background: linear-gradient(var(--flaeche2), var(--flaeche)); border: 1px solid var(--linie); border-radius: 6px; padding: 14px 8px; display: grid; gap: 14px }
+.reihe { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px }
+.spl { width: 96px; text-align: center; background: var(--flaeche); border: 1px solid var(--linie); border-radius: 6px; padding: 6px 4px }
+.spl .n { font-weight: 600; font-size: .84rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.spl .p { font: 700 1.15rem var(--f-titel) }
+.spl.top { border-color: var(--gold) }
+.spl .v { font-size: .7rem; color: var(--leise); overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+
+/* Balken */
+.balken { display: grid; gap: 4px }
+.bz { display: grid; grid-template-columns: 3.2em 1fr 4.2em; gap: 8px; align-items: center; font-size: .82rem }
+.bspur { height: 14px; background: var(--flaeche2); border-radius: 2px; position: relative; overflow: hidden }
+.bspur i { position: absolute; inset: 0 auto 0 0; background: var(--gold-tief) }
+.bspur b { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--gold) }
+
+.abgabe { display: grid; gap: 10px; padding: 14px 0; border-bottom: 1px solid var(--linie) }
+.abgabe:last-child { border-bottom: 0 }
+.abgabe .zeile1 { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; justify-content: space-between }
+.hinweis { font-size: .85rem; color: var(--leise) }
+.regel { border-bottom: 1px solid var(--linie); padding: 10px 0 }
+.regel summary { cursor: pointer; font-weight: 600 }
+.regel p, .regel ul { margin: 8px 0 0; max-width: 70ch }
+footer { color: var(--leise); font-size: .8rem; margin-top: 36px }
+@media (max-width: 560px) { header.kopf img { width: 56px; height: 56px } .spl { width: 78px } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important } }
+</style>
+
+<div class="rahmen">
+  <header class="kopf">
+    <img id="logo" alt="Logo SGLDE">
+    <div>
+      <h1 id="titel">SGLDE 4.1</h1>
+      <div class="unter" id="unter"></div>
+    </div>
+  </header>
+  <nav class="reiter" id="reiter"></nav>
+  <main id="inhalt"></main>
+  <footer id="fuss"></footer>
+</div>
+
+<script>
+const D = /*__DATEN__*/null;
+const BILDER = /*__BILDER__*/{};
+
+const fmt = n => n == null ? "–" : Number(n).toLocaleString("de-DE");
+const mio = n => n == null ? "–" : (n / 1e6).toLocaleString("de-DE", {minimumFractionDigits: 1, maximumFractionDigits: 1}) + " Mio.";
+const vz = n => n == null ? "–" : (n > 0 ? "+" : "") + fmt(n);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const datum = (iso, mitZeit) => { if (!iso) return "–"; const d = new Date(iso);
+  return d.toLocaleDateString("de-DE", {weekday: "short", day: "2-digit", month: "2-digit"}) + (mitZeit === false ? "" : " " + d.toLocaleTimeString("de-DE", {hour: "2-digit", minute: "2-digit"})); };
+const name = u => (D.manager[u] || {}).n || u;
+const bild = u => { const m = D.manager[u] || {}; if (BILDER["manager_" + u]) return BILDER["manager_" + u]; return m.bild ? "bilder/" + m.bild : null; };
+const mgr = u => { const b = bild(u); const n = name(u);
+  return `<span class="mgr">${b ? `<img src="${esc(b)}" alt="" loading="lazy">` : `<span class="ini">${esc(n.slice(0, 2))}</span>`}<span>${esc(n)}</span></span>`; };
+const POS = {1: "TW", 2: "ABW", 3: "MF", 4: "ST"};
+const STATUS = {erledigt: "Erledigt", offen: "Offen", verspaetet: "Verspätet", ueberfaellig: "Überfällig", ausnahme: "Ausnahme"};
+const FARBEN = ["#c9b052", "#7fa6c9", "#d9705e", "#74b77a", "#b48ad1", "#e39a5c", "#5fc2b8", "#d27fa6", "#a8b54a", "#8f8fe0", "#c98a6a", "#6fb0e0", "#e0c46f", "#9ccf8f", "#d6a3d6", "#7fd0d0", "#e08f8f", "#b0a090"];
+const fertig = D.spieltage.fertig;
+const alleST = Object.keys(D.tabellen).map(Number).sort((a, b) => a - b);
+const letzterST = alleST[alleST.length - 1];
+const farbe = {}; Object.keys(D.manager).forEach((u, i) => farbe[u] = FARBEN[i % FARBEN.length]);
+const lesen = (k, s) => { try { const v = localStorage.getItem("sglde_" + k); return v == null ? s : JSON.parse(v); } catch (e) { return s; } };
+const merken = (k, v) => { try { localStorage.setItem("sglde_" + k, JSON.stringify(v)); } catch (e) {} };
+
+const REITER = [
+  ["uebersicht", "Übersicht"], ["tabelle", "Tabelle"], ["abgaben", "Abgabeliste"], ["bumstabelle", "Bumstabelle"],
+  ["manager", "Manager"], ["transfers", "Transfers"], ["aufstellungen", "Aufstellungen"], ["regeln", "Regeln"]];
+const ansicht = {};
+
+// ------------------------------------------------------------ Kopf
+function kopf() {
+  const logo = BILDER.logo || (D.liga.logo ? "bilder/" + D.liga.logo : "");
+  const img = document.getElementById("logo"); if (logo) img.src = logo; else img.hidden = true;
+  document.getElementById("titel").textContent = D.liga.name;
+  const st = fertig.length ? `Stand nach ${fertig[fertig.length - 1]}. Spieltag` : "Saison noch nicht gestartet";
+  document.getElementById("unter").textContent = `Hinrunde 26/27 · Spieltag ${D.spieltage.von}–${D.spieltage.bis} · ${st}` + (D.spieltage.laufend.length ? ` · ${D.spieltage.laufend[0]}. Spieltag läuft` : "");
+  document.getElementById("reiter").innerHTML = REITER.map(([k, t]) => `<a href="#${k}" data-k="${k}">${t}</a>`).join("");
+  document.getElementById("fuss").textContent = "Daten: Kickbase · aktualisiert " + datum(D.erstellt) + " · Aufstellungen und Punkte nur abgeschlossener Spieltage, außer markiert.";
+}
+
+// ------------------------------------------------------------ Uebersicht
+function uebersicht() {
+  const z = D.zusammenfassung, n = D.naechster;
+  const offen = [];
+  Object.entries(D.abgaben).forEach(([st, a]) => a.liste.forEach(e => { if (e.status === "offen" || e.status === "ueberfaellig") offen.push([st, e]); }));
+  const tab = D.tabellen[fertig[fertig.length - 1]] || [];
+  let h = `<div class="raster">`;
+  h += `<section class="tafel"><h3>Spieltagsvorschau</h3>` + (n ? `<div class="kopfzeile"><h2>${n.st}. Spieltag</h2><span class="leise">Anstoß ${datum(n.start)}</span></div>` : `<p class="leise">Kein weiterer Spieltag in der Hinrunde.</p>`) +
+    (offen.length ? `<p class="hinweis">Noch offene Abgaben:</p><div class="stapel" style="gap:8px">${offen.map(([st, e]) => `<div class="kopfzeile" style="margin:0">${mgr(e.i)}<span><span class="leise klein">ST ${st} · ${esc(e.stufe)}</span> <span class="pille p-${e.status}">${STATUS[e.status]}${e.strafe ? " +" + e.strafe : ""}</span></span></div>`).join("")}</div>` : `<p class="hinweis">Alle Abgaben erledigt.</p>`) +
+    `</section>`;
+  if (z) {
+    h += `<section class="tafel"><h3>Zusammenfassung ${z.st}. Spieltag</h3><div class="kennzahlen">
+      <div class="kz"><div class="bez">Spieltagssieg</div><div class="wert zahl">${fmt(z.sieger_p)}</div>${mgr(z.sieger)}</div>
+      <div class="kz"><div class="bez">Letzter</div><div class="wert zahl">${fmt(z.letzter_p)}</div>${mgr(z.letzter)}</div>
+      <div class="kz"><div class="bez">Schnitt</div><div class="wert zahl">${fmt(z.schnitt)}</div><span class="leise klein">${z.ueber1000.length}× 1000+, ${z.ueber800.length}× 800+</span></div>
+      ${z.mvp ? `<div class="kz"><div class="bez">Bester Spieler</div><div class="wert zahl">${fmt(z.mvp.p)}</div><span class="klein">${esc(z.mvp.n)} <span class="leise">bei ${esc(name(z.mvp.u))}</span></span></div>` : ""}
+    </div><p class="hinweis" style="margin-top:14px">Tabellenführer: <strong>${esc(name(z.fuehrung))}</strong></p></section>`;
+  }
+  h += `</div><div class="raster" style="margin-top:18px">`;
+  // Halbserien-Analyse
+  const zeilen = tab.map(t => ({t, p: D.profile[t.i]}));
+  h += `<section class="tafel" style="grid-column:1/-1"><div class="kopfzeile"><h3 style="margin:0">Halbserien-Analyse</h3><span class="leise klein">nur abgeschlossene Spieltage</span></div><div class="scroll"><table>
+    <thead><tr><th>Manager</th><th class="r">Ø</th><th class="r">Streuung</th><th class="r">Bester ST</th><th class="r">Schwächster ST</th><th class="r">Siege</th><th class="r">Top 3</th><th class="r">1000+</th><th class="r">800+</th></tr></thead><tbody>` +
+    zeilen.map(({t, p}) => `<tr class="klickbar" data-mgr="${t.i}"><td>${mgr(t.i)}</td><td class="r zahl">${fmt(p.schnitt)}</td><td class="r zahl leise">±${fmt(p.streuung)}</td>
+      <td class="r zahl">${p.bester ? fmt(p.bester[1]) + ` <span class="leise klein">ST${p.bester[0]}</span>` : "–"}</td>
+      <td class="r zahl">${p.schlechtester ? fmt(p.schlechtester[1]) + ` <span class="leise klein">ST${p.schlechtester[0]}</span>` : "–"}</td>
+      <td class="r zahl">${p.siege}</td><td class="r zahl">${p.top3}</td><td class="r zahl">${p.ueber1000}</td><td class="r zahl">${p.ueber800}</td></tr>`).join("") +
+    `</tbody></table></div></section>`;
+  h += `<section class="tafel"><h3>Rekordbuch</h3><div class="rekorde">` + D.rekorde.map(r => `<div class="rekord"><span class="t">${esc(r.titel)}</span><span class="w zahl">${fmt(r.wert)}${esc(r.einheit || "")}</span>
+      <span>${r.wer.map(u => esc(name(u))).join(", ")}${r.spieler ? ` <span class="leise">mit ${esc(r.spieler)}</span>` : ""}${r.st ? ` <span class="leise klein">ST ${[...new Set(r.st)].join(", ")}</span>` : ""}</span></div>`).join("") + `</div></section>`;
+  if (D.korrekturen.length) h += `<section class="tafel"><h3>Punktekorrekturen</h3><table><tbody>${D.korrekturen.map(k => `<tr><td>${mgr(k.i)}</td><td class="r zahl" style="color:var(--${k.amt < 0 ? "schlecht" : "gut"})">${vz(k.amt)}</td><td class="r leise klein">${datum(k.dt, false)}</td></tr>`).join("")}</tbody></table></section>`;
+  h += `</div>`;
+  return h;
+}
+
+// ------------------------------------------------------------ Tabelle
+function tabelle() {
+  const st = ansicht.tabST || letzterST;
+  const tab = D.tabellen[st] || [];
+  const laeuft = !fertig.includes(st);
+  let h = `<div class="stapel"><section class="tafel"><div class="kopfzeile"><h2>Tabelle</h2><div class="wahl"><label for="tabST" class="leise klein">Stand nach</label>
+    <select id="tabST">${alleST.map(s => `<option value="${s}" ${s === st ? "selected" : ""}>${s}. Spieltag${fertig.includes(s) ? "" : " (läuft)"}</option>`).join("")}</select></div></div>
+    ${laeuft ? `<p class="hinweis">Der Spieltag läuft noch, Punkte vorläufig.</p>` : ""}
+    <p class="hinweis" style="margin-top:0">Tore und Assists: nur Spieler, die beim Manager aufgestellt waren, aufsummiert bis zum gewählten Spieltag; klein dahinter der Anteil dieses Spieltags.</p>
+    <div class="scroll"><table><thead><tr><th>Pl.</th><th>±</th><th>Manager</th><th class="r">Spieltag</th><th class="r">Ø pro ST</th><th class="r">Siege</th><th class="r" title="Tore der aufgestellten Spieler">Tore</th><th class="r" title="Assists der aufgestellten Spieler">Assists</th><th class="r">Rückstand</th><th class="r">Kaderwert</th><th class="r">Punkte</th></tr></thead><tbody>` +
+    tab.map(t => { const d = t.vorplatz ? t.vorplatz - t.pl : 0;
+      return `<tr class="klickbar" data-mgr="${t.i}"><td><span class="rang ${t.pl === 1 ? "r1" : ""}">${t.pl}</span></td>
+      <td><span class="trend ${d > 0 ? "hoch" : d < 0 ? "runter" : ""}">${d > 0 ? "▲" + d : d < 0 ? "▼" + (-d) : "·"}</span></td>
+      <td>${mgr(t.i)}</td><td class="r zahl">${fmt(t.mdp)} <span class="leise klein">(${t.mdpl}.)</span></td><td class="r zahl">${fmt(t.schnitt)}</td>
+      <td class="r zahl">${t.siege}</td>
+      <td class="r zahl">${t.scorer_da ? fmt(t.tore) + (t.st_tore ? ` <span class="leise klein">+${t.st_tore}</span>` : "") : "–"}</td>
+      <td class="r zahl">${t.scorer_da ? fmt(t.assists) + (t.st_assists ? ` <span class="leise klein">+${t.st_assists}</span>` : "") : "–"}</td>
+      <td class="r zahl leise">${t.rueckstand ? "−" + fmt(t.rueckstand) : "–"}</td><td class="r zahl leise">${mio(t.tv)}</td><td class="r zahl"><strong>${fmt(t.sp)}</strong></td></tr>`; }).join("") +
+    `</tbody></table></div></section>`;
+  h += diagrammTafel();
+  // Platz-Matrix
+  const sts = fertig;
+  const reihen = (D.tabellen[sts[sts.length - 1]] || []).map(t => t.i);
+  const n = reihen.length;
+  const mx = ansicht.matrix || "spieltag";
+  const feld = mx === "spieltag" ? "mdpl" : "spl";
+  h += `<section class="tafel"><div class="kopfzeile"><h3 style="margin:0">Platz je Spieltag</h3><div class="wahl"><button data-mx="spieltag" class="${mx === "spieltag" ? "an" : ""}">Spieltagsplatz</button><button data-mx="tabelle" class="${mx === "tabelle" ? "an" : ""}">Tabellenplatz</button></div></div>
+    <p class="hinweis" style="margin-top:0">${mx === "spieltag" ? "Platzierung in der Wertung des jeweiligen Spieltags." : "Platz in der Gesamttabelle nach dem jeweiligen Spieltag."} Sortiert nach aktueller Tabelle.</p><div class="scroll"><table class="matrix"><thead><tr><th>Manager</th>${sts.map(s => `<th class="r">${s}</th>`).join("")}</tr></thead><tbody>` +
+    reihen.map(u => `<tr><td>${mgr(u)}</td>${sts.map(s => { const p = D.verlauf[u][feld][s]; const a = p ? 1 - (p - 1) / Math.max(1, n - 1) : 0;
+      return `<td class="feld" style="background:color-mix(in srgb, var(--gold) ${Math.round(a * 55)}%, transparent);${p === 1 ? "font-weight:700" : ""}">${p || "–"}</td>`; }).join("")}</tr>`).join("") +
+    `</tbody></table></div></section></div>`;
+  return h;
+}
+
+function diagrammTafel() {
+  const art = ansicht.diaArt || "gesamt";
+  const arten = [["gesamt", "Gesamtpunkte"], ["abstand", "Abstand zu Platz 1"], ["spieltag", "Punkte je Spieltag"], ["platz", "Platzverlauf"]];
+  const gewaehlt = ansicht.diaWahl || lesen("diaWahl", null) || (D.tabellen[letzterST] || []).slice(0, 5).map(t => t.i);
+  ansicht.diaWahl = gewaehlt;
+  return `<section class="tafel diagramm"><div class="kopfzeile"><h3 style="margin:0">Punkteentwicklung</h3><div class="wahl">${arten.map(([k, t]) => `<button data-dia="${k}" class="${k === art ? "an" : ""}">${t}</button>`).join("")}</div></div>
+    <div id="dia">${diagramm(art, gewaehlt)}</div>
+    <div class="legende">${Object.keys(D.manager).map(u => `<button data-hl="${u}" class="${gewaehlt.includes(u) ? "an" : ""}"><span class="punkt" style="background:${farbe[u]}"></span>${esc(name(u))}</button>`).join("")}
+      <button data-hlalle="top5">Top 5</button><button data-hlalle="alle">Alle</button><button data-hlalle="keine">Keine</button></div></section>`;
+}
+
+function diagramm(art, gewaehlt) {
+  const sts = fertig.length ? fertig : alleST;
+  if (!sts.length) return `<p class="leise">Noch keine Daten.</p>`;
+  const W = 900, H = 340, L = 56, R = 16, O = 14, U = 30;
+  const wert = (u, s) => { const v = D.verlauf[u];
+    if (art === "gesamt") return v.sp[s];
+    if (art === "spieltag") return v.mdp[s];
+    if (art === "platz") return v.spl[s];
+    const f = Math.max(...Object.keys(D.manager).map(x => D.verlauf[x].sp[s] || 0)); return v.sp[s] - f; };
+  let werte = []; Object.keys(D.manager).forEach(u => sts.forEach(s => { const w = wert(u, s); if (w != null) werte.push(w); }));
+  let min = Math.min(...werte), max = Math.max(...werte);
+  if (art === "platz") { min = 1; max = Object.keys(D.manager).length; }
+  if (art !== "platz") { const r = (max - min) || 1; min = Math.floor((min - r * .04) / 100) * 100; max = Math.ceil((max + r * .04) / 100) * 100; if (art === "abstand") max = 0; }
+  const x = i => L + (sts.length === 1 ? (W - L - R) / 2 : i * (W - L - R) / (sts.length - 1));
+  const y = w => art === "platz" ? O + (w - min) / (max - min || 1) * (H - O - U) : O + (max - w) / (max - min || 1) * (H - O - U);
+  const ticks = [];
+  if (art === "platz") { for (let w = 1; w <= max; w += (max > 10 ? 3 : 1)) ticks.push(w); }
+  else { const roh = (max - min) / 5, p10 = Math.pow(10, Math.floor(Math.log10(roh || 1)));
+    const schritt = [1, 2, 2.5, 5, 10].map(f => f * p10).find(f => f >= roh) || p10 * 10;
+    for (let w = Math.ceil(min / schritt) * schritt; w <= max; w += schritt) ticks.push(Math.round(w)); }
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Diagramm ${art}">`;
+  [...new Set(ticks)].forEach(w => s += `<line x1="${L}" x2="${W - R}" y1="${y(w)}" y2="${y(w)}" stroke="var(--linie)" stroke-width="1"/><text x="${L - 8}" y="${y(w) + 4}" text-anchor="end">${art === "platz" ? w + "." : fmt(w)}</text>`);
+  sts.forEach((st, i) => s += `<text x="${x(i)}" y="${H - 10}" text-anchor="middle">${st}</text>`);
+  const reihenfolge = Object.keys(D.manager).sort((a, b) => gewaehlt.includes(a) - gewaehlt.includes(b));
+  reihenfolge.forEach(u => {
+    const an = gewaehlt.includes(u);
+    const pkt = sts.map((st, i) => [x(i), wert(u, st)]).filter(p => p[1] != null).map(p => [p[0], y(p[1])]);
+    if (!pkt.length) return;
+    const col = an ? farbe[u] : "var(--linie)";
+    s += `<polyline data-hl="${u}" points="${pkt.map(p => p.join(",")).join(" ")}" fill="none" stroke="${col}" stroke-width="${an ? 2.5 : 1.2}" stroke-linejoin="round" style="cursor:pointer"><title>${esc(name(u))}</title></polyline>`;
+    if (an) { const e = pkt[pkt.length - 1]; s += `<circle cx="${e[0]}" cy="${e[1]}" r="4" fill="${col}"/>`; }
+  });
+  return s + `</svg>`;
+}
+
+// ------------------------------------------------------------ Abgabeliste
+function abgaben() {
+  const sts = Object.keys(D.abgaben).map(Number).sort((a, b) => a - b);
+  if (!sts.length) return `<section class="tafel"><p class="leise">Noch kein abgeschlossener Spieltag.</p></section>`;
+  const st = ansicht.abST || sts[sts.length - 1];
+  const a = D.abgaben[st];
+  let h = `<section class="tafel"><div class="kopfzeile"><h2>Abgabeliste</h2><div class="wahl"><label for="abST" class="leise klein">Spieltag</label>
+    <select id="abST">${sts.map(s => `<option value="${s}" ${s === st ? "selected" : ""}>${s}. Spieltag</option>`).join("")}</select></div></div>
+    <p class="hinweis">Frist: <strong>${datum(a.frist)}</strong>. Abgabe nur an den Markt. Gezählt werden nur die aufgestellten Spieler; bei Punktgleichstand an der Grenze zählen alle punktgleichen mit. Grün umrandet = an den Markt verkauft, durchgestrichen = an einen Mitmanager verkauft (zählt nicht).</p>`;
+  if (!a.liste.length) h += `<p class="leise">An diesem Spieltag musste niemand abgeben.</p>`;
+  a.liste.forEach(e => {
+    h += `<div class="abgabe"><div class="zeile1">${mgr(e.i)}<span class="leise klein">${fmt(e.mdp)} Punkte · ${e.mdpl}. am Spieltag · <strong style="color:var(--text)">${esc(e.stufe)}</strong> → einer der Top ${e.top}</span>
+      <span class="pille p-${e.status}">${STATUS[e.status]}</span></div>
+      <div class="chips">${e.kandidaten.map(k => `<span class="chip ${k.weg || ""}"><span>${esc(k.n)}</span><span class="zahl leise">${fmt(k.p)}</span></span>`).join("")}</div>`;
+    if (e.abgegeben) h += `<div class="hinweis">Abgegeben: <strong style="color:var(--text)">${esc(e.abgegeben.n)}</strong> am ${datum(e.abgegeben.dt)} für ${mio(e.abgegeben.preis)}</div>`;
+    if (e.an_manager.length) h += `<div class="hinweis" style="color:var(--schlecht)">An Mitmanager verkauft (zählt nicht): ${e.an_manager.map(t => `${esc(t.n)} an ${esc(t.an)}`).join(", ")}</div>`;
+    if (e.strafe) h += `<div class="hinweis" style="color:var(--warn)">Strafe wegen Verspätung: ${e.strafe} zusätzliche${e.strafe > 1 ? "" : "r"} Verkauf${e.strafe > 1 ? "e" : ""} aus der Startelf · erledigt ${e.strafe_erledigt}/${e.strafe}${e.straf_verkaeufe.length ? " (" + e.straf_verkaeufe.map(t => esc(t.n)).join(", ") + ")" : ""}</div>`;
+    if (e.ausnahme) h += `<div class="hinweis">Ausnahme: ${esc(e.ausnahme)}</div>`;
+    h += `</div>`;
+  });
+  return h + `</section>`;
+}
+
+// ------------------------------------------------------------ Bumstabelle
+function bumstabelle() {
+  const schnitt = w => w == null ? "–" : fmt(w);
+  const diff = d => d == null ? "–" : `<span style="color:var(--${d > 0 ? "gut" : d < 0 ? "schlecht" : "leise"})">${d > 0 ? "+" : ""}${fmt(d)}</span>`;
+  let h = `<div class="stapel"><section class="tafel"><div class="kopfzeile"><h2>Bumstabelle</h2></div>
+    <p class="hinweis">Haben die Manager die richtigen Spieler abgegeben? Verglichen wird der Punkteschnitt pro Spieltag der abgegebenen Spieler mit dem der behaltenen. Behalten = die übrigen Spieler aus derselben Auswahl (Top 3/5); bei Strafverkäufen die übrige Startelf. Gezählt wird ab dem Spieltag nach der Abgabe, bis der Spieler wieder beim abgebenden Manager im Kader steht und aufgestellt wird. Spieltage ohne Einsatz zählen mit 0 Punkten.</p>
+    <p class="hinweis"><strong style="color:var(--gut)">Grün</strong> = die Behaltenen waren besser, richtig abgegeben. <strong style="color:var(--schlecht)">Rot</strong> = die Abgegebenen waren besser, gebumst. Oben steht, wer am meisten gebumst wurde.</p>
+    <div class="scroll"><table><thead><tr><th>#</th><th>Manager</th><th class="r">Abgaben</th><th class="r">davon Strafe</th><th class="r">Punkte danach</th><th class="r">Ø abgegeben</th><th class="r">Ø behalten</th><th class="r">Differenz</th><th>Größter Verlust</th></tr></thead><tbody>` +
+    D.bums_tabelle.map((z, i) => `<tr class="klickbar" data-mgr="${z.i}"><td><span class="rang ${i === 0 && z.bilanz < 0 ? "r1" : ""}">${i + 1}</span></td><td>${mgr(z.i)}</td><td class="r zahl">${z.anzahl}</td><td class="r zahl leise">${z.strafen}</td>
+      <td class="r zahl">${fmt(z.summe)}</td><td class="r zahl"><strong>${schnitt(z.schnitt)}</strong></td><td class="r zahl"><strong>${schnitt(z.beh_schnitt)}</strong></td><td class="r zahl">${diff(z.bilanz)}</td><td>${esc(z.bester || "–")}</td></tr>`).join("") +
+    `</tbody></table></div></section>`;
+  h += `<section class="tafel"><h3>Alle Abgaben</h3><p class="hinweis" style="margin-top:0">Grau = Spieltag ohne Einsatz (0 Punkte). „Ø behalten“: Fahre über den Wert, um die behaltenen Spieler zu sehen.</p><div class="scroll"><table><thead><tr><th>Spieler</th><th>Abgegeben von</th><th class="r">ST</th><th>Art</th><th>Punkte danach je Spieltag</th><th class="r">Summe</th><th class="r">Ø</th><th class="r">Ø behalten</th><th class="r">Differenz</th></tr></thead><tbody>` +
+    (D.bums.length ? D.bums.map(b => { const titel = b.behalten.map(x => `${x.n}: Ø ${schnitt(x.schnitt)}`).join(", ");
+      return `<tr><td><strong>${esc(b.n)}</strong></td><td>${mgr(b.u)}</td><td class="r zahl">${b.st}</td><td class="leise">${b.art}</td>
+      <td class="zahl klein">${b.verlauf.length ? b.verlauf.map(v => `<span class="leise">${v.st}:</span><span class="${v.ohne ? "leise" : ""}">${fmt(v.p)}</span>`).join(" · ") : `<span class="leise">noch kein Spieltag</span>`}${b.zurueck ? ` <span class="pille p-offen">zurück ab ST ${b.zurueck}</span>` : ""}</td>
+      <td class="r zahl">${fmt(b.summe)}</td><td class="r zahl"><strong>${schnitt(b.schnitt)}</strong></td>
+      <td class="r zahl" title="${esc(titel)}">${schnitt(b.beh_schnitt)}</td><td class="r zahl">${diff(b.schnitt == null || b.beh_schnitt == null ? null : b.beh_schnitt - b.schnitt)}</td></tr>`; }).join("") : `<tr><td colspan="9" class="leise">Noch keine Abgaben.</td></tr>`) +
+    `</tbody></table></div></section></div>`;
+  return h;
+}
+
+// ------------------------------------------------------------ Manager
+function managerSeite() {
+  const reihen = (D.tabellen[letzterST] || []).map(t => t.i);
+  const u = ansicht.mgr || reihen[0];
+  const vgl = ansicht.vgl || "";
+  const p = D.profile[u] || {}, v = D.verlauf[u];
+  const t = (D.tabellen[letzterST] || []).find(x => x.i === u) || {};
+  const b = D.bilanz.find(x => x.i === u) || {kader: []};
+  const bt = D.bums_tabelle.find(x => x.i === u) || {};
+  const optionen = (sel, leer) => (leer ? `<option value="">– niemand –</option>` : "") + reihen.map(x => `<option value="${x}" ${x === sel ? "selected" : ""}>${esc(name(x))}</option>`).join("");
+  let h = `<div class="stapel"><section class="tafel"><div class="kopfzeile"><h2>${mgr(u)}</h2><div class="wahl">
+    <label for="mgrWahl" class="leise klein">Manager</label><select id="mgrWahl">${optionen(u)}</select>
+    <label for="vglWahl" class="leise klein">vergleichen mit</label><select id="vglWahl">${optionen(vgl, true)}</select></div></div>
+    <div class="kennzahlen">
+      <div class="kz"><div class="bez">Platz</div><div class="wert">${t.pl || "–"}.</div></div>
+      <div class="kz"><div class="bez">Punkte</div><div class="wert zahl">${fmt(t.sp)}</div></div>
+      <div class="kz"><div class="bez">Ø je Spieltag</div><div class="wert zahl">${fmt(p.schnitt)}</div></div>
+      <div class="kz"><div class="bez">Siege / Top 3</div><div class="wert zahl">${p.siege} / ${p.top3}</div></div>
+      <div class="kz"><div class="bez">Abgaben</div><div class="wert zahl">${bt.anzahl || 0}</div></div>
+      <div class="kz"><div class="bez">Kaderwert</div><div class="wert zahl">${mio(t.tv)}</div></div>
+      <div class="kz"><div class="bez">Transfergewinn</div><div class="wert zahl" style="color:var(--${(b.gewinn || 0) >= 0 ? "gut" : "schlecht"})">${mio(b.gewinn)}</div></div>
+    </div></section><div class="raster">`;
+  // Spieltage im Verlauf
+  const sieger = s => Math.max(...Object.keys(D.manager).map(x => D.verlauf[x].mdp[s] || 0));
+  const maxW = Math.max(1, ...fertig.map(sieger));
+  h += `<section class="tafel"><h3>Spieltage im Verlauf</h3><p class="hinweis" style="margin-top:0">Balken = eigene Punkte${vgl ? `, darunter ${esc(name(vgl))}` : ""}; Goldstrich = Spieltagssieger.</p><div class="balken">` +
+    fertig.map(s => { const w = v.mdp[s] || 0, g = sieger(s);
+      let z = `<div class="bz"><span class="leise">ST ${s}</span><span class="bspur"><i style="width:${Math.max(0, w) / maxW * 100}%"></i><b style="left:calc(${g / maxW * 100}% - 2px)"></b></span><span class="zahl r" style="text-align:right">${fmt(w)}</span></div>`;
+      if (vgl) { const w2 = D.verlauf[vgl].mdp[s] || 0; z += `<div class="bz"><span></span><span class="bspur" style="height:8px"><i style="width:${Math.max(0, w2) / maxW * 100}%;background:var(--info)"></i></span><span class="zahl leise" style="text-align:right">${fmt(w2)}</span></div>`; }
+      return z; }).join("") + `</div></section>`;
+  // Vergleich / Top-Spieler
+  if (vgl) {
+    const p2 = D.profile[vgl], t2 = (D.tabellen[letzterST] || []).find(x => x.i === vgl) || {};
+    const dir = fertig.filter(s => (v.mdp[s] || 0) > (D.verlauf[vgl].mdp[s] || 0)).length;
+    const zeile = (bez, a, c) => `<tr><td class="r zahl">${a}</td><th style="text-align:center">${bez}</th><td class="zahl">${c}</td></tr>`;
+    h += `<section class="tafel"><h3>Direkter Vergleich</h3><table><thead><tr><th class="r">${esc(name(u))}</th><th></th><th>${esc(name(vgl))}</th></tr></thead><tbody>
+      ${zeile("Punkte", fmt(t.sp), fmt(t2.sp))}${zeile("Platz", t.pl + ".", t2.pl + ".")}${zeile("Ø", fmt(p.schnitt), fmt(p2.schnitt))}
+      ${zeile("Siege", p.siege, p2.siege)}${zeile("1000+", p.ueber1000, p2.ueber1000)}${zeile("Spieltage besser", dir, fertig.length - dir)}</tbody></table></section>`;
+  }
+  h += `<section class="tafel"><h3>Punktelieferanten</h3><p class="hinweis" style="margin-top:0">Meiste Punkte für diesen Manager (nur aufgestellt).</p><table><tbody>` +
+    (p.top_spieler || []).map(s => `<tr><td><strong>${esc(s.n)}</strong></td><td class="r zahl">${fmt(s.p)}</td><td class="r leise klein">${s.einsaetze}× aufgestellt</td></tr>`).join("") + `</tbody></table></section>`;
+  h += `<section class="tafel"><h3>Aktueller Kader</h3><div class="scroll"><table><thead><tr><th>Pos.</th><th>Spieler</th><th class="r">Punkte</th><th class="r">Marktwert</th><th class="r">seit Kauf</th></tr></thead><tbody>` +
+    b.kader.map(k => `<tr><td class="leise">${POS[k.pos] || ""}</td><td>${esc(k.n)}</td><td class="r zahl">${fmt(k.p)}</td><td class="r zahl">${mio(k.mv)}</td><td class="r zahl" style="color:var(--${(k.diff || 0) >= 0 ? "gut" : "schlecht"})">${k.diff == null ? "–" : (k.diff >= 0 ? "+" : "") + mio(k.diff)}</td></tr>`).join("") +
+    `</tbody></table></div></section></div></div>`;
+  return h;
+}
+
+// ------------------------------------------------------------ Transfers
+function transfers() {
+  const f = ansicht.trMgr || "";
+  const reihen = (D.tabellen[letzterST] || []).map(t => t.i);
+  const liste = D.transfers.filter(t => !f || t.u === f).slice().reverse();
+  const anzahl = ansicht.trAnz || 60;
+  let h = `<div class="stapel"><section class="tafel"><div class="kopfzeile"><h2>Transferbilanz</h2></div>
+    <p class="hinweis">Gewinn = Verkaufspreis minus Kaufpreis. „Seit Kauf“ = Marktwert heute minus Kaufpreis der Spieler im Kader (noch nicht verkauft).</p>
+    <div class="scroll"><table><thead><tr><th>Manager</th><th class="r">Käufe</th><th class="r">Verkäufe</th><th class="r">Ausgaben</th><th class="r">Einnahmen</th><th class="r">Gewinn</th><th class="r">Seit Kauf</th></tr></thead><tbody>` +
+    D.bilanz.map(b => `<tr class="klickbar" data-tr="${b.i}"><td>${mgr(b.i)}</td><td class="r zahl">${b.kaeufe}</td><td class="r zahl">${b.verkaeufe}</td><td class="r zahl">${mio(b.ausgaben)}</td><td class="r zahl">${mio(b.einnahmen)}</td>
+      <td class="r zahl" style="color:var(--${b.gewinn >= 0 ? "gut" : "schlecht"})">${(b.gewinn >= 0 ? "+" : "") + mio(b.gewinn)}</td><td class="r zahl" style="color:var(--${b.buchgewinn >= 0 ? "gut" : "schlecht"})">${(b.buchgewinn >= 0 ? "+" : "") + mio(b.buchgewinn)}</td></tr>`).join("") +
+    `</tbody></table></div></section>
+    <section class="tafel"><div class="kopfzeile"><h3 style="margin:0">Alle Transfers</h3><div class="wahl"><label for="trMgr" class="leise klein">Manager</label><select id="trMgr"><option value="">alle</option>${reihen.map(u => `<option value="${u}" ${u === f ? "selected" : ""}>${esc(name(u))}</option>`).join("")}</select></div></div>
+    <div class="scroll"><table><thead><tr><th>Datum</th><th>Manager</th><th></th><th>Spieler</th><th>von / an</th><th class="r">Preis</th><th class="r">Gewinn</th></tr></thead><tbody>` +
+    liste.slice(0, anzahl).map(t => `<tr><td class="leise klein">${datum(t.dt)}</td><td>${mgr(t.u)}</td><td><span class="pille ${t.art === "kauf" ? "p-offen" : "p-verspaetet"}">${t.art === "kauf" ? "Kauf" : "Verkauf"}</span></td>
+      <td>${esc(t.n)}</td><td class="leise">${esc(t.gegen)}</td><td class="r zahl">${mio(t.preis)}</td><td class="r zahl" style="color:var(--${(t.gewinn || 0) >= 0 ? "gut" : "schlecht"})">${t.gewinn == null ? "" : (t.gewinn >= 0 ? "+" : "") + mio(t.gewinn)}</td></tr>`).join("") +
+    `</tbody></table></div>${liste.length > anzahl ? `<p><button id="trMehr">Weitere ${Math.min(100, liste.length - anzahl)} anzeigen (${liste.length - anzahl} übrig)</button></p>` : ""}</section></div>`;
+  return h;
+}
+
+// ------------------------------------------------------------ Aufstellungen
+function aufstellungen() {
+  const st = ansicht.aufST || letzterST;
+  const reihen = (D.tabellen[st] || []).map(t => t.i);
+  const u = ansicht.aufMgr || reihen[0];
+  const elf = (D.aufstellungen[st] || {})[u] || [];
+  const top = elf.map(x => x.p || 0).sort((a, b) => b - a)[2];
+  const zeile = (D.tabellen[st] || []).find(t => t.i === u) || {};
+  let h = `<section class="tafel"><div class="kopfzeile"><h2>Aufstellungen</h2><div class="wahl">
+    <label for="aufST" class="leise klein">Spieltag</label><select id="aufST">${alleST.map(s => `<option value="${s}" ${s === st ? "selected" : ""}>${s}. Spieltag${fertig.includes(s) ? "" : " (läuft)"}</option>`).join("")}</select>
+    <label for="aufMgr" class="leise klein">Manager</label><select id="aufMgr">${reihen.map(x => `<option value="${x}" ${x === u ? "selected" : ""}>${esc(name(x))}</option>`).join("")}</select></div></div>
+    <p class="hinweis">${mgr(u)} · <strong class="zahl" style="color:var(--text)">${fmt(zeile.mdp)}</strong> Punkte · ${zeile.mdpl || "–"}. am Spieltag. Gold umrandet = Top 3 des Spieltags.</p><div class="platz">`;
+  [4, 3, 2, 1].forEach(pos => {
+    const reihe = elf.filter(x => x.pos === pos);
+    if (reihe.length) h += `<div class="reihe">${reihe.map(x => `<div class="spl ${(x.p || 0) >= top && x.p != null ? "top" : ""}"><div class="p zahl">${x.p == null ? "–" : fmt(x.p)}</div><div class="n" title="${esc(x.n)}">${esc(x.n)}</div><div class="v">${esc(D.vereine[x.tid] || "")}${x.mp ? " · " + esc(x.mp) : ""}</div></div>`).join("")}</div>`;
+  });
+  const ohne = elf.filter(x => !x.pos);
+  if (ohne.length) h += `<div class="reihe">${ohne.map(x => `<div class="spl"><div class="p">${fmt(x.p)}</div><div class="n">${esc(x.n)}</div></div>`).join("")}</div>`;
+  if (!elf.length) h += `<p class="leise" style="text-align:center">Keine Aufstellung gespeichert.</p>`;
+  return h + `</div></section>`;
+}
+
+// ------------------------------------------------------------ Regeln
+function regeln() {
+  const r = D.regeln || {};
+  const eintrag = (t, inhalt, offen) => `<details class="regel" ${offen ? "open" : ""}><summary>${t}</summary>${inhalt}</details>`;
+  return `<section class="tafel"><h2 style="margin-bottom:12px">Regeln</h2>
+    <div class="kennzahlen" style="margin-bottom:14px">
+      <div class="kz"><div class="bez">Spielzeit</div><div class="wert">Hinrunde</div></div>
+      <div class="kz"><div class="bez">Budget</div><div class="wert">variabel</div></div>
+      <div class="kz"><div class="bez">Kader</div><div class="wert zahl">${r.kader}</div></div>
+      <div class="kz"><div class="bez">Je Verein</div><div class="wert zahl">max. ${r.max_je_verein}</div></div>
+      <div class="kz"><div class="bez">Draft</div><div class="wert zahl">${r.draft_runden} Runden</div></div>
+      <div class="kz"><div class="bez">Underpay / Boni</div><div class="wert">aus</div></div>
+    </div>
+    ${eintrag("Abgabepflicht nach dem Spieltag", `<ul>
+      <li><strong>Platz 1–3 des Spieltags:</strong> immer einen der Top 3 abgeben, egal wie viele Punkte.</li>
+      <li><strong>1000+ Punkte:</strong> einen der Top 3 abgeben.</li>
+      <li><strong>800+ Punkte:</strong> einen der Top 5 abgeben.</li>
+      <li>Gilt nur für die aufgestellten Spieler. „Top 3/5“ = die Spieler mit den meisten Punkten an diesem Spieltag.</li>
+      <li>Punktgleichstand an der Grenze: alle punktgleichen Spieler gehören zur Auswahl.</li>
+      <li>Wer mehrere Bedingungen erfüllt, hat trotzdem nur eine Pflicht (die strengere).</li></ul>`, true)}
+    ${eintrag("Nur an den Markt", `<p>Der Spieler muss an den Markt verkauft werden. Ein Verkauf an einen Mitmanager zählt nicht; dann muss ein anderer Spieler aus der Auswahl an den Markt.</p>`)}
+    ${eintrag("Frist und Strafe", `<p>Frist ist Dienstag 22 Uhr nach dem Spieltag. Danach muss zusätzlich ein Spieler aus der aufgestellten Elf, der noch im Kader ist, an den Markt verkauft werden, und an jedem weiteren Tag noch einer.</p>`)}
+    ${eintrag("Bumstabelle", `<p>Zählt die Punkte, die abgegebene Spieler nach ihrer Abgabe gemacht haben, bis sie wieder beim abgebenden Manager im Kader stehen und dort aufgestellt werden.</p>`)}
+  </section>`;
+}
+
+// ------------------------------------------------------------ Steuerung
+const SEITEN = {uebersicht, tabelle, abgaben, bumstabelle, manager: managerSeite, transfers, aufstellungen, regeln};
+function zeigen() {
+  let k = location.hash.slice(1); if (!SEITEN[k]) k = "uebersicht";
+  document.querySelectorAll("#reiter a").forEach(a => a.classList.toggle("aktiv", a.dataset.k === k));
+  document.getElementById("inhalt").innerHTML = SEITEN[k]();
+}
+document.addEventListener("change", e => {
+  const id = e.target.id, w = e.target.value;
+  if (id === "tabST") ansicht.tabST = +w; else if (id === "abST") ansicht.abST = +w;
+  else if (id === "mgrWahl") ansicht.mgr = w; else if (id === "vglWahl") ansicht.vgl = w;
+  else if (id === "trMgr") { ansicht.trMgr = w; ansicht.trAnz = 60; }
+  else if (id === "aufST") ansicht.aufST = +w; else if (id === "aufMgr") ansicht.aufMgr = w; else return;
+  zeigen();
+});
+document.addEventListener("click", e => {
+  const z = e.target.closest("[data-mgr]"); if (z) { ansicht.mgr = z.dataset.mgr; location.hash = "manager"; return; }
+  const tr = e.target.closest("[data-tr]"); if (tr) { ansicht.trMgr = tr.dataset.tr; zeigen(); return; }
+  const mxk = e.target.closest("[data-mx]"); if (mxk) { ansicht.matrix = mxk.dataset.mx; zeigen(); return; }
+  const d = e.target.closest("[data-dia]"); if (d) { ansicht.diaArt = d.dataset.dia; zeigen(); return; }
+  const hl = e.target.closest("[data-hl]"); if (hl) { const u = hl.dataset.hl, w = ansicht.diaWahl;
+    ansicht.diaWahl = w.includes(u) ? w.filter(x => x !== u) : w.concat(u); merken("diaWahl", ansicht.diaWahl); zeigen(); return; }
+  const ha = e.target.closest("[data-hlalle]"); if (ha) { const a = ha.dataset.hlalle;
+    ansicht.diaWahl = a === "alle" ? Object.keys(D.manager) : a === "keine" ? [] : (D.tabellen[letzterST] || []).slice(0, 5).map(t => t.i);
+    merken("diaWahl", ansicht.diaWahl); zeigen(); return; }
+  if (e.target.id === "trMehr") { ansicht.trAnz = (ansicht.trAnz || 60) + 100; zeigen(); }
+});
+window.addEventListener("hashchange", () => { zeigen(); window.scrollTo(0, 0); });
+kopf(); zeigen();
+</script>

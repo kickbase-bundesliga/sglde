@@ -1,0 +1,85 @@
+# SGLDE 4.1: Daten von Kickbase holen, speichern und die Webseite veroeffentlichen.
+# Manuell: Reiter "Actions" -> "SGLDE" -> "Run workflow".
+# Bei Aenderungen an Config oder Skripten wird nur die Webseite neu gebaut.
+name: SGLDE
+
+on:
+  schedule:
+    - cron: "13 6 * * *"     # taeglich ca. 7:13 Uhr (Winterzeit) / 8:13 Uhr (Sommerzeit)
+    - cron: "37 21 * * 2"    # dienstags ca. 22:37 Uhr (Winterzeit): Stand direkt nach der Abgabefrist
+  workflow_dispatch:
+    inputs:
+      nur_webseite:
+        description: "Nur Webseite neu bauen (keine neuen Daten holen)"
+        type: boolean
+        default: false
+      alles_neu:
+        description: "Alles neu holen (nur bei Problemen, dauert ca. 15 Minuten)"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - "config/**"
+      - "scripts/**"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sglde
+  cancel-in-progress: false
+
+jobs:
+  daten:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Pakete installieren
+        run: pip install -q requests
+
+      - name: Daten holen
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.nur_webseite != true)
+        env:
+          PRIVAT_EMAIL: ${{ secrets.PRIVAT_EMAIL }}
+          PRIVAT_PASSWORT: ${{ secrets.PRIVAT_PASSWORT }}
+          ALLES_NEU: ${{ inputs.alles_neu }}
+          PYTHONUNBUFFERED: "1"
+          PYTHONIOENCODING: utf-8
+        run: |
+          if [ "$ALLES_NEU" = "true" ]; then
+            python scripts/sglde_sammeln.py --alles
+          else
+            python scripts/sglde_sammeln.py
+          fi
+          ST=$(python -c "import json;print(max(json.load(open('liga/daten/stand.json'))['fertige'] or [0]))")
+          bash .github/speichern.sh "SGLDE: Daten bis Spieltag $ST"
+
+      - name: Webseite bauen
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python scripts/sglde_webseite.py
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: liga/webseite
+
+  veroeffentlichen:
+    needs: daten
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v5
