@@ -13503,5 +13503,293 @@
   },
   "dt": "2026-11-06T23:00:10Z",
   "t": 3
+ },
+ "13305065257": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "15373",
+   "pim": "content/file/4ceda4e80b804183b8af45a55f8bbb24.png",
+   "pn": "Heskey",
+   "t": 1,
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg",
+   "trp": 501055
+  },
+  "dt": "2026-11-06T23:38:06Z",
+  "t": 15
+ },
+ "13305270640": {
+  "data": {
+   "fn": "Felix",
+   "iposl": false,
+   "ln": "Agu",
+   "mv": 500000,
+   "pi": "2842",
+   "pim": "content/file/d3aec548a0d84afcb6a8f6c90cc09e72.png",
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg"
+  },
+  "dt": "2026-11-07T00:07:24Z",
+  "t": 3
+ },
+ "13305641134": {
+  "data": {
+   "fn": "Matthias",
+   "iposl": false,
+   "ln": "Köbbing",
+   "mv": 500000,
+   "pi": "2536",
+   "pim": "content/file/d7d4847201364186986efefd11b55766.png",
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg"
+  },
+  "dt": "2026-11-07T01:08:46Z",
+  "t": 3
+ },
+ "13305699328": {
+  "data": {
+   "pi": "15373",
+   "pim": "content/file/4ceda4e80b804183b8af45a55f8bbb24.png",
+   "pn": "Heskey",
+   "slr": "Baumhaus",
+   "t": 2,
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-07T01:20:02Z",
+  "t": 15
+ },
+ "13305716689": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "3139",
+   "pim": "content/file/c4cfdfdc99a949ea8f5f97c7c316efd8.png",
+   "pn": "Itten",
+   "t": 1,
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg",
+   "trp": 506050
+  },
+  "dt": "2026-11-07T01:23:15Z",
+  "t": 15
+ },
+ "13305956197": {
+  "data": {
+   "fn": "Tim",
+   "iposl": false,
+   "ln": "Binder",
+   "mv": 1164648,
+   "pi": "15502",
+   "pim": "content/file/bd4ad2cb101841eab3aa5641a51ee891.png",
+   "tid": "2",
+   "tim": "content/file/ff70df040a9f4179a7b45219225a2273.svg"
+  },
+  "dt": "2026-11-07T02:10:58Z",
+  "t": 3
+ },
+ "13305973399": {
+  "data": {
+   "pi": "6217",
+   "pim": "content/file/585c2df9602d47268fb6aaf32245792c.png",
+   "pn": "Philippe",
+   "slr": "OligarchenRonny",
+   "t": 2,
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg",
+   "trp": 4927295
+  },
+  "dt": "2026-11-07T02:14:58Z",
+  "t": 15
+ },
+ "13306233760": {
+  "data": {
+   "pi": "3139",
+   "pim": "content/file/c4cfdfdc99a949ea8f5f97c7c316efd8.png",
+   "pn": "Itten",
+   "slr": "Baumhaus",
+   "t": 2,
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-07T03:09:18Z",
+  "t": 15
+ },
+ "13306238569": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "2176",
+   "pim": "content/file/fd6c0b5e138c4a7382c1f0eade49e3f9.png",
+   "pn": "Höler",
+   "t": 1,
+   "tid": "5",
+   "tim": "content/file/6c1a9f14b668493283f966834891aa70.svg",
+   "trp": 2830208
+  },
+  "dt": "2026-11-07T03:11:02Z",
+  "t": 15
+ },
+ "13306260700": {
+  "data": {
+   "fn": "Nicolas",
+   "iposl": false,
+   "ln": "Kühn",
+   "mv": 2437016,
+   "pi": "2126",
+   "pim": "content/file/4881796043e3415988bd7340d2f89b43.png",
+   "tid": "15",
+   "tim": "content/file/7178ef92ad0747a5ad1a05d0783f5088.svg"
+  },
+  "dt": "2026-11-07T03:15:09Z",
+  "t": 3
+ },
+ "13306559896": {
+  "data": {
+   "fn": "Fábio",
+   "iposl": false,
+   "ln": "Vieira",
+   "mv": 7532609,
+   "pi": "11967",
+   "pim": "content/file/c93ccb5240654ea0832be06471767031.png",
+   "tid": "6",
+   "tim": "content/file/c9b7d8772f324f9badeb285af4c5810a.svg"
+  },
+  "dt": "2026-11-07T04:19:18Z",
+  "t": 3
+ },
+ "13306884853": {
+  "data": {
+   "fn": "Alexander",
+   "iposl": false,
+   "ln": "Prass",
+   "mv": 9332516,
+   "pi": "7717",
+   "pim": "content/file/f9e6ef6646eb4d248d5ce3ee24abda2d.png",
+   "tid": "14",
+   "tim": "content/file/5212904732a04199aab426e44067347c.svg"
+  },
+  "dt": "2026-11-07T05:25:28Z",
+  "t": 3
+ },
+ "13307232178": {
+  "data": {
+   "fn": "Leonidas",
+   "iposl": false,
+   "ln": "Stergiou",
+   "mv": 500000,
+   "pi": "7257",
+   "pim": "content/file/5969fcecc82d4c039732fa615901d1b2.png",
+   "tid": "9",
+   "tim": "content/file/9a1bb78d0ccf45f895797c0c6d8c4d40.svg"
+  },
+  "dt": "2026-11-07T06:26:31Z",
+  "t": 3
+ },
+ "13307703283": {
+  "data": {
+   "pi": "2560",
+   "pim": "content/file/fb578835ac86440a8189e44877f9bcc8.png",
+   "pn": "Sander",
+   "slr": "Baumann",
+   "t": 2,
+   "tid": "15",
+   "tim": "content/file/7178ef92ad0747a5ad1a05d0783f5088.svg",
+   "trp": 8339008
+  },
+  "dt": "2026-11-07T07:36:46Z",
+  "t": 15
+ },
+ "13307759767": {
+  "data": {
+   "byr": "Charco8",
+   "pi": "14048",
+   "pim": "content/file/51c1a52f7444432aab2f7b125fe5ac33.png",
+   "pn": "Goto",
+   "t": 1,
+   "tid": "5",
+   "tim": "content/file/6c1a9f14b668493283f966834891aa70.svg",
+   "trp": 5242467
+  },
+  "dt": "2026-11-07T07:45:11Z",
+  "t": 15
+ },
+ "13308040270": {
+  "data": {
+   "pi": "1858",
+   "pim": "content/file/5de873b60e7a46eb83255e4a5297a974.png",
+   "pn": "Jung",
+   "slr": "WaveDaBreaker",
+   "t": 2,
+   "tid": "5",
+   "tim": "content/file/6c1a9f14b668493283f966834891aa70.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-07T08:26:46Z",
+  "t": 15
+ },
+ "13308119392": {
+  "data": {
+   "fn": "Robert",
+   "iposl": false,
+   "ln": "Andrich",
+   "mv": 4298153,
+   "pi": "663",
+   "pim": "content/file/0cdcdb27004443c09d112462f32ace2c.png",
+   "tid": "7",
+   "tim": "content/file/e06a055a6eaf4fd7bebfadb35037f957.svg"
+  },
+  "dt": "2026-11-07T08:38:48Z",
+  "t": 3
+ },
+ "13308403858": {
+  "data": {
+   "bn": 100000,
+   "day": 33
+  },
+  "dt": "2026-11-07T09:23:09Z",
+  "t": 22
+ },
+ "13308955270": {
+  "data": {
+   "pi": "10134",
+   "pim": "content/file/cbb89b4949af4997a53ca8ecc1ce7c78.png",
+   "pn": "Schmetgens",
+   "slr": "Baumhaus",
+   "t": 2,
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg",
+   "trp": 3680718
+  },
+  "dt": "2026-11-07T10:57:50Z",
+  "t": 15
+ },
+ "13308979129": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "13888",
+   "pim": "content/file/812bc3c9b83245c09d36a46dd5b0b56b.png",
+   "pn": "Doué",
+   "t": 1,
+   "tid": "7",
+   "tim": "content/file/e06a055a6eaf4fd7bebfadb35037f957.svg",
+   "trp": 3602523
+  },
+  "dt": "2026-11-07T11:01:59Z",
+  "t": 15
+ },
+ "13309281562": {
+  "data": {
+   "fn": "Robin",
+   "iposl": false,
+   "ln": "Hack",
+   "mv": 5794462,
+   "pi": "2074",
+   "pim": "content/file/05225d0ae1a74293a432710302565e54.png",
+   "tid": "15",
+   "tim": "content/file/7178ef92ad0747a5ad1a05d0783f5088.svg"
+  },
+  "dt": "2026-11-07T11:56:17Z",
+  "t": 3
  }
 }

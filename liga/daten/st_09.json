@@ -1,5 +1,5 @@
 {
- "abgerufen": "2026-11-06T23:00:23.040548Z",
+ "abgerufen": "2026-11-07T13:02:32.101647Z",
  "fertig": false,
  "manager": [
   {
@@ -18,10 +18,10 @@
     2862,
     7226
    ],
-   "mdp": -71,
+   "mdp": -74,
    "mdpl": 18,
    "n": "WaveDaBreaker",
-   "sp": 6662,
+   "sp": 6659,
    "spl": 13,
    "tv": 160582149.0,
    "uim": "user/90f35322048444f996e38232a9a33c56.png"
@@ -258,10 +258,10 @@
     9698,
     6217
    ],
-   "mdp": 403,
+   "mdp": 409,
    "mdpl": 1,
    "n": "OligarchenRonny",
-   "sp": 8300,
+   "sp": 8306,
    "spl": 3,
    "tv": 160433296.0,
    "uim": "user/05eddb58c37649a984a897ea1f307292.jpeg"
