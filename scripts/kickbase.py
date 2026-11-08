@@ -15,7 +15,9 @@ try:
 except ImportError:
     requests = None
 
-KENNUNG = "python-requests/2.31.0"
+# Offene Kennung: Kickbase soll sehen, dass die Abrufe von der SGLDE-Seite kommen
+# und dass Poeti dahintersteht.
+KENNUNG = "SGLDE-Ligaseite/1.0 (betrieben von Poeti; +https://kickbase-bundesliga.github.io/sglde/)"
 
 BASIS = "https://api.kickbase.com"
 BILD_BASIS = "https://kickbase.b-cdn.net/"
@@ -60,7 +62,8 @@ class Api(object):
 
     def _roh(self, methode, pfad, daten=None):
         url = pfad if pfad.startswith("http") else BASIS + pfad
-        kopf = {"Accept": "application/json", "Content-Type": "application/json"}
+        kopf = {"Accept": "application/json", "Content-Type": "application/json",
+                "User-Agent": KENNUNG}
         if self.token:
             kopf["Authorization"] = "Bearer " + self.token
         try:
@@ -70,7 +73,6 @@ class Api(object):
                     raise ApiFehler(r.status_code, r.text)
                 text = r.text
             else:
-                kopf["User-Agent"] = KENNUNG
                 koerper = json.dumps(daten).encode("utf-8") if daten is not None else None
                 req = urllib.request.Request(url, data=koerper, method=methode, headers=kopf)
                 try:
@@ -107,7 +109,7 @@ def bild_url(wert):
 
 def bild_laden(url, ziel):
     if requests is not None:
-        r = requests.get(url, timeout=30)
+        r = requests.get(url, headers={"User-Agent": KENNUNG}, timeout=30)
         r.raise_for_status()
         daten = r.content
     else:
