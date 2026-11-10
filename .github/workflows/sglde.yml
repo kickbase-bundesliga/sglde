@@ -8,6 +8,8 @@ on:
     - cron: "7 18 * * *"     # taeglich ca. 19:07 Uhr (Winterzeit) / 20:07 Uhr (Sommerzeit): kurz nach der Abrechnung (18 Uhr) + 1 h
     - cron: "13 6 * * *"     # taeglich ca. 7:13 Uhr: Nachkontrolle
     - cron: "37 21 * * 2"    # dienstags ca. 22:37 Uhr (Winterzeit): Stand direkt nach der Abgabefrist
+    - cron: "43 20 * * 0"    # sonntags ca. 21:43 Uhr: vorlaeufiger Stand des laufenden Spieltags
+    - cron: "47 21 * * 1"    # montags ca. 22:47 Uhr: vorlaeufiger Stand inkl. Montagsspiel
   workflow_dispatch:
     inputs:
       nur_webseite:
