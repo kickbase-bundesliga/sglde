@@ -1,6 +1,6 @@
 {
- "abgerufen": "2026-11-09T16:21:48.767694Z",
- "fertig": false,
+ "abgerufen": "2026-11-10T01:27:07.846959Z",
+ "fertig": true,
  "manager": [
   {
    "adm": true,
@@ -66,10 +66,10 @@
     11513,
     3304
    ],
-   "mdp": 946,
+   "mdp": 961,
    "mdpl": 8,
    "n": "mircodinho",
-   "sp": 8718,
+   "sp": 8733,
    "spl": 5,
    "tv": 152154974.0,
    "uim": "user/7e4ff7a28f434a8faafd22c1c14d9c6c.jpe"
@@ -210,10 +210,10 @@
     11007,
     2746
    ],
-   "mdp": 792,
+   "mdp": 777,
    "mdpl": 15,
    "n": "Freezy",
-   "sp": 8212,
+   "sp": 8197,
    "spl": 8,
    "tv": 147207434.0,
    "uim": "user/d5d6ca95fd054d58bba16448df40ea29.png"
