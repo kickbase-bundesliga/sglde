@@ -15891,5 +15891,323 @@
   },
   "dt": "2026-11-11T23:55:26Z",
   "t": 3
+ },
+ "13362100918": {
+  "data": {
+   "fn": "Patrick",
+   "iposl": false,
+   "ln": "Drewes",
+   "mv": 500000,
+   "pi": "75",
+   "pim": "content/file/d4b85a111f624b02a8519a1a07c23e7f.png",
+   "prurl": "pool/players/75.jpg",
+   "tid": "3",
+   "tim": "content/file/dc3d63ae79bf4282a4107bafcd572b99.svg"
+  },
+  "dt": "2026-11-12T01:06:08Z",
+  "t": 3
+ },
+ "13362143677": {
+  "data": {
+   "byr": "OligarchenRonny",
+   "pi": "16948",
+   "pim": "content/file/222864c862d743758c5cdcbcbd1bba48.png",
+   "pn": "Konstantelias",
+   "t": 1,
+   "tid": "3",
+   "tim": "content/file/dc3d63ae79bf4282a4107bafcd572b99.svg",
+   "trp": 1199999
+  },
+  "dt": "2026-11-12T01:14:06Z",
+  "t": 15
+ },
+ "13362278425": {
+  "data": {
+   "byr": "OligarchenRonny",
+   "pi": "11665",
+   "pim": "content/file/b1ee33c0ce864060a4d44adf70936760.png",
+   "pn": "Potulski",
+   "t": 1,
+   "tid": "18",
+   "tim": "content/file/d4ac9675b44944039d463837f888cb1c.svg",
+   "trp": 10199999
+  },
+  "dt": "2026-11-12T01:42:20Z",
+  "t": 15
+ },
+ "13362430051": {
+  "data": {
+   "fn": "Benedict",
+   "iposl": false,
+   "ln": "Hollerbach",
+   "mv": 2439217,
+   "pi": "6111",
+   "pim": "content/file/212f0c9603f04c869640c40bdbb0a396.png",
+   "tid": "18",
+   "tim": "content/file/d4ac9675b44944039d463837f888cb1c.svg"
+  },
+  "dt": "2026-11-12T02:13:54Z",
+  "t": 3
+ },
+ "13362711223": {
+  "data": {
+   "fn": "Jan",
+   "iposl": false,
+   "ln": "Gyamerah",
+   "mv": 1646471,
+   "pi": "859",
+   "pim": "content/file/605c8e04a1e448d28636a175391a6394.png",
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg"
+  },
+  "dt": "2026-11-12T03:15:11Z",
+  "t": 3
+ },
+ "13363015576": {
+  "data": {
+   "byr": "Poeti",
+   "pi": "2498",
+   "pim": "content/file/e009e7eb6946411f8f86641cb56174fe.png",
+   "pn": "Baack",
+   "t": 1,
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg",
+   "trp": 6134599
+  },
+  "dt": "2026-11-12T04:15:36Z",
+  "t": 15
+ },
+ "13363017481": {
+  "data": {
+   "fn": "Edin",
+   "iposl": false,
+   "ln": "Džeko",
+   "mv": 1408530,
+   "pi": "1012",
+   "pim": "content/file/31e382a514fb4fd0a7b6bf028b56f839.png",
+   "tid": "8",
+   "tim": "content/file/fed743ec085c41a9b2453875157257fe.svg"
+  },
+  "dt": "2026-11-12T04:16:30Z",
+  "t": 3
+ },
+ "13363076977": {
+  "data": {
+   "byr": "Gandalf der Grüne",
+   "pi": "7514",
+   "pim": "content/file/bd59eb88ca624feda29aaaea681b7e05.png",
+   "pn": "Le Joncour",
+   "t": 1,
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg",
+   "trp": 2399885
+  },
+  "dt": "2026-11-12T04:26:43Z",
+  "t": 15
+ },
+ "13363444189": {
+  "data": {
+   "fn": "Emre",
+   "iposl": false,
+   "ln": "Can",
+   "mv": 500000,
+   "pi": "54",
+   "pim": "content/file/fe3cc9ba92274b29890b3d2888584906.png",
+   "prurl": "pool/players/54.jpg",
+   "tid": "3",
+   "tim": "content/file/dc3d63ae79bf4282a4107bafcd572b99.svg"
+  },
+  "dt": "2026-11-12T05:23:50Z",
+  "t": 3
+ },
+ "13363955302": {
+  "data": {
+   "fn": "Markus",
+   "iposl": false,
+   "ln": "Kolke",
+   "mv": 500000,
+   "pi": "3450",
+   "pim": "content/file/8e62a66ca620435fa877b6e0ed662c0b.png",
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg"
+  },
+  "dt": "2026-11-12T06:25:56Z",
+  "t": 3
+ },
+ "13364070745": {
+  "data": {
+   "bn": 100000,
+   "day": 38
+  },
+  "dt": "2026-11-12T06:40:47Z",
+  "t": 22
+ },
+ "13364078701": {
+  "data": {
+   "pi": "2201",
+   "pim": "content/file/54aad91024e84cf59b75e3c363775d71.png",
+   "pn": "Maina",
+   "slr": "Poeti",
+   "t": 2,
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg",
+   "trp": 8377202
+  },
+  "dt": "2026-11-12T06:42:06Z",
+  "t": 15
+ },
+ "13364144089": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "7441",
+   "pim": "content/file/669458754d454557bed29bb138f25294.png",
+   "pn": "Campbell",
+   "t": 1,
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg",
+   "trp": 4830023
+  },
+  "dt": "2026-11-12T06:50:49Z",
+  "t": 15
+ },
+ "13364399869": {
+  "data": {
+   "fn": "",
+   "iposl": false,
+   "ln": "Otávio",
+   "mv": 500000,
+   "pi": "15589",
+   "pim": "content/file/29d28defc06541cdb2d6e020dc443ca1.png",
+   "tid": "4",
+   "tim": "content/file/422de82bee3b47eb898699d6d27095ba.svg"
+  },
+  "dt": "2026-11-12T07:28:03Z",
+  "t": 3
+ },
+ "13364842369": {
+  "data": {
+   "fn": "Amara",
+   "iposl": false,
+   "ln": "Condé",
+   "mv": 500000,
+   "pi": "1745",
+   "pim": "content/file/f4a59adaeaa34d489c40d0fc80a957a6.png",
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg"
+  },
+  "dt": "2026-11-12T08:36:25Z",
+  "t": 3
+ },
+ "13365199375": {
+  "data": {
+   "fn": "Assan",
+   "iposl": false,
+   "ln": "Ouédraogo",
+   "mv": 1220641,
+   "pi": "6300",
+   "pim": "content/file/44f5198b463047fc88626d9698f3a2d0.png",
+   "tid": "43",
+   "tim": "content/file/29ceb88867954b548ca9e27d39d050c2.svg"
+  },
+  "dt": "2026-11-12T09:37:33Z",
+  "t": 3
+ },
+ "13365573271": {
+  "data": {
+   "fn": "Jae-Sung",
+   "iposl": false,
+   "ln": "Lee",
+   "mv": 7996035,
+   "pi": "2476",
+   "pim": "content/file/b0241527f3d94a8c976c749e2004944d.png",
+   "tid": "18",
+   "tim": "content/file/d4ac9675b44944039d463837f888cb1c.svg"
+  },
+  "dt": "2026-11-12T10:45:03Z",
+  "t": 3
+ },
+ "13365919012": {
+  "data": {
+   "fn": "Mario",
+   "iposl": false,
+   "ln": "Vušković",
+   "mv": 500000,
+   "pi": "3279",
+   "pim": "content/file/dd5850f8ec6e4b9591721e188bed102d.png",
+   "tid": "6",
+   "tim": "content/file/c9b7d8772f324f9badeb285af4c5810a.svg"
+  },
+  "dt": "2026-11-12T11:48:21Z",
+  "t": 3
+ },
+ "13366031764": {
+  "data": {
+   "byr": "Yannick",
+   "pi": "6172",
+   "pim": "content/file/61eaae6121e34a598bac55925001ce96.png",
+   "pn": "Adamu",
+   "t": 1,
+   "tid": "8",
+   "tim": "content/file/fed743ec085c41a9b2453875157257fe.svg",
+   "trp": 5124585
+  },
+  "dt": "2026-11-12T12:08:52Z",
+  "t": 15
+ },
+ "13366191145": {
+  "data": {
+   "byr": "mircodinho",
+   "pi": "2006",
+   "pim": "content/file/890290d8b9bd491fb3c624f1c57d47bd.png",
+   "pn": "Posch",
+   "t": 1,
+   "tid": "18",
+   "tim": "content/file/d4ac9675b44944039d463837f888cb1c.svg",
+   "trp": 12699999
+  },
+  "dt": "2026-11-12T12:39:14Z",
+  "t": 15
+ },
+ "13366255204": {
+  "data": {
+   "fn": "Josip",
+   "iposl": false,
+   "ln": "Stanišić",
+   "mv": 14741241,
+   "pi": "2300",
+   "pim": "content/file/e5f36d7812254f3cb4534802eb6cd7e9.png",
+   "tid": "2",
+   "tim": "content/file/ff70df040a9f4179a7b45219225a2273.svg"
+  },
+  "dt": "2026-11-12T12:50:43Z",
+  "t": 3
+ },
+ "13366598560": {
+  "data": {
+   "fn": "Tim",
+   "iposl": false,
+   "ln": "Boss",
+   "mv": 500000,
+   "pi": "2495",
+   "pim": "content/file/56d626009997411d96ea41f2355a4a62.png",
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg"
+  },
+  "dt": "2026-11-12T13:57:08Z",
+  "t": 3
+ },
+ "13366928110": {
+  "data": {
+   "fn": "Ismael",
+   "iposl": false,
+   "ln": "Saibari",
+   "mv": 18811599,
+   "pi": "14251",
+   "pim": "content/file/a8113275ef93446185b8dd4966df1834.png",
+   "tid": "2",
+   "tim": "content/file/ff70df040a9f4179a7b45219225a2273.svg"
+  },
+  "dt": "2026-11-12T15:01:37Z",
+  "t": 3
  }
 }
