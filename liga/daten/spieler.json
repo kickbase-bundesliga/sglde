@@ -1100,6 +1100,29 @@
   "tid": "14",
   "tn": "Hoffenheim"
  },
+ "11170": {
+  "fn": "Ruben",
+  "n": "Müller",
+  "pim": "content/file/30dea41b80454a638771929f17e0d368.png",
+  "pos": 3,
+  "punkte": {
+   "6": {
+    "mi": "12055",
+    "mp": "20'",
+    "p": 9
+   },
+   "9": {
+    "mi": "12130",
+    "mp": "67'",
+    "p": 80
+   }
+  },
+  "saison": "2026/2027",
+  "stand": "2026-11-14T22:15:56.166337Z",
+  "stand_st": 9,
+  "tid": "29",
+  "tn": "Paderborn"
+ },
  "11186": {
   "fn": "Jeremiaha",
   "n": "Maluze",
@@ -12310,6 +12333,18 @@
   "stand_st": 9,
   "tid": "7",
   "tn": "Leverkusen"
+ },
+ "417": {
+  "fn": "Ron-Robert",
+  "n": "Zieler",
+  "pim": "content/file/87bb56a22db74cfd99e639824b703f30.png",
+  "pos": 1,
+  "punkte": {},
+  "saison": "2026/2027",
+  "stand": "2026-11-14T22:15:56.166337Z",
+  "stand_st": 9,
+  "tid": "28",
+  "tn": "Köln"
  },
  "4199": {
   "fn": "Aleix",

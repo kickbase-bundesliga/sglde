@@ -17017,5 +17017,188 @@
   },
   "dt": "2026-11-14T13:21:50Z",
   "t": 15
+ },
+ "13382661310": {
+  "data": {
+   "fn": "Raphael",
+   "iposl": false,
+   "ln": "Onyedika",
+   "mv": 11665293,
+   "pi": "16369",
+   "pim": "content/file/4413ed18fac54a58a6e94d858ea72074.png",
+   "tid": "4",
+   "tim": "content/file/422de82bee3b47eb898699d6d27095ba.svg"
+  },
+  "dt": "2026-11-14T13:54:36Z",
+  "t": 3
+ },
+ "13383000163": {
+  "data": {
+   "fn": "Philipp",
+   "iposl": false,
+   "ln": "Treu",
+   "mv": 11344005,
+   "pi": "6209",
+   "pim": "content/file/76b764f7f4a448e39454f846207e2071.png",
+   "tid": "5",
+   "tim": "content/file/6c1a9f14b668493283f966834891aa70.svg"
+  },
+  "dt": "2026-11-14T15:00:52Z",
+  "t": 3
+ },
+ "13383347704": {
+  "data": {
+   "fn": "Raif",
+   "iposl": false,
+   "ln": "Adam",
+   "mv": 1360819,
+   "pi": "12317",
+   "pim": "content/file/47b81129a6b9411b92255354f3e36834.png",
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg"
+  },
+  "dt": "2026-11-14T16:10:14Z",
+  "t": 3
+ },
+ "13383410851": {
+  "data": {
+   "byr": "Gandalf der Grüne",
+   "pi": "1873",
+   "pim": "content/file/f2d4753d2676442bb38580d0b59a6293.png",
+   "pn": "Kobel",
+   "t": 1,
+   "tid": "3",
+   "tim": "content/file/dc3d63ae79bf4282a4107bafcd572b99.svg",
+   "trp": 20645728
+  },
+  "dt": "2026-11-14T16:23:22Z",
+  "t": 15
+ },
+ "13383693292": {
+  "data": {
+   "fn": "Livan",
+   "iposl": false,
+   "ln": "Burcu",
+   "mv": 1935482,
+   "pi": "8381",
+   "pim": "content/file/9ee1048c9191462c82b58e23f1dbf647.png",
+   "tid": "40",
+   "tim": "content/file/8f4c7c08ee9b4dca85c28260fc5917bd.svg"
+  },
+  "dt": "2026-11-14T17:18:38Z",
+  "t": 3
+ },
+ "13383870523": {
+  "data": {
+   "byr": "Maxin",
+   "pi": "417",
+   "pim": "content/file/87bb56a22db74cfd99e639824b703f30.png",
+   "pn": "Zieler",
+   "t": 1,
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg",
+   "trp": 500001
+  },
+  "dt": "2026-11-14T17:53:16Z",
+  "t": 15
+ },
+ "13384005829": {
+  "data": {
+   "fn": "Mitchell",
+   "iposl": false,
+   "ln": "Weiser",
+   "mv": 4884528,
+   "pi": "43",
+   "pim": "content/file/d4075d101f5c49f88113a719ed8f34e5.png",
+   "prurl": "pool/players/43.jpg",
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg"
+  },
+  "dt": "2026-11-14T18:18:53Z",
+  "t": 3
+ },
+ "13384131082": {
+  "data": {
+   "byr": "Gandalf der Grüne",
+   "pi": "11170",
+   "pim": "content/file/30dea41b80454a638771929f17e0d368.png",
+   "pn": "Müller",
+   "t": 1,
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg",
+   "trp": 2258935
+  },
+  "dt": "2026-11-14T18:40:19Z",
+  "t": 15
+ },
+ "13384396657": {
+  "data": {
+   "fn": "Robin",
+   "iposl": false,
+   "ln": "Fellhauer",
+   "mv": 7704093,
+   "pi": "6168",
+   "pim": "content/file/c458283e0fd243beb4cd2bd270cbfb54.png",
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg"
+  },
+  "dt": "2026-11-14T19:22:11Z",
+  "t": 3
+ },
+ "13384463938": {
+  "data": {
+   "pi": "2395",
+   "pim": "content/file/2998191f5e674fecb9ddf7762821ebc5.png",
+   "pn": "Ryerson",
+   "slr": "mircodinho",
+   "t": 2,
+   "tid": "3",
+   "tim": "content/file/dc3d63ae79bf4282a4107bafcd572b99.svg",
+   "trp": 15108659
+  },
+  "dt": "2026-11-14T19:34:46Z",
+  "t": 15
+ },
+ "13384730128": {
+  "data": {
+   "fn": "Ayoube",
+   "iposl": false,
+   "ln": "Amaimouni",
+   "mv": 500000,
+   "pi": "12294",
+   "pim": "content/file/5f68ec42f258435a8233881431dc3c75.png",
+   "tid": "4",
+   "tim": "content/file/422de82bee3b47eb898699d6d27095ba.svg"
+  },
+  "dt": "2026-11-14T20:28:32Z",
+  "t": 3
+ },
+ "13385100397": {
+  "data": {
+   "fn": "Albian",
+   "iposl": false,
+   "ln": "Hajdari",
+   "mv": 1443130,
+   "pi": "7673",
+   "pim": "content/file/0f60a3cd21c94cc4913d13f811e532a9.png",
+   "tid": "14",
+   "tim": "content/file/5212904732a04199aab426e44067347c.svg"
+  },
+  "dt": "2026-11-14T21:31:38Z",
+  "t": 3
+ },
+ "13385170423": {
+  "data": {
+   "pi": "17203",
+   "pim": "content/file/84e882059fcb4accba56e1b212d31e8f.png",
+   "pn": "Moffi",
+   "slr": "Oli",
+   "t": 2,
+   "tid": "6",
+   "tim": "content/file/c9b7d8772f324f9badeb285af4c5810a.svg",
+   "trp": 7095079
+  },
+  "dt": "2026-11-14T21:42:54Z",
+  "t": 15
  }
 }
