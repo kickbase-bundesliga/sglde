@@ -16712,5 +16712,310 @@
   },
   "dt": "2026-11-13T22:40:30Z",
   "t": 3
+ },
+ "13377861172": {
+  "data": {
+   "bn": 100000,
+   "day": 40
+  },
+  "dt": "2026-11-13T23:33:59Z",
+  "t": 22
+ },
+ "13378274716": {
+  "data": {
+   "pi": "1745",
+   "pim": "content/file/f4a59adaeaa34d489c40d0fc80a957a6.png",
+   "pn": "Condé",
+   "slr": "Baumhaus",
+   "t": 2,
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-14T00:38:48Z",
+  "t": 15
+ },
+ "13378275031": {
+  "data": {
+   "pi": "14911",
+   "pim": "content/file/7462061e1e7843ffb7efaa2fe7e2b5f5.png",
+   "pn": "Lippmann",
+   "slr": "Baumhaus",
+   "t": 2,
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-14T00:38:52Z",
+  "t": 15
+ },
+ "13379268634": {
+  "data": {
+   "fn": "Tom",
+   "iposl": false,
+   "ln": "Rothe",
+   "mv": 6087605,
+   "pi": "3102",
+   "pim": "content/file/82917858d1a74a7f90a2d9dfca456b71.png",
+   "tid": "40",
+   "tim": "content/file/8f4c7c08ee9b4dca85c28260fc5917bd.svg"
+  },
+  "dt": "2026-11-14T04:03:30Z",
+  "t": 3
+ },
+ "13379950537": {
+  "data": {
+   "fn": "Ruben",
+   "iposl": false,
+   "ln": "Müller",
+   "mv": 1365112,
+   "pi": "11170",
+   "pim": "content/file/30dea41b80454a638771929f17e0d368.png",
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg"
+  },
+  "dt": "2026-11-14T06:19:50Z",
+  "t": 3
+ },
+ "13379958421": {
+  "data": {
+   "byr": "Hasan",
+   "pi": "2822",
+   "pim": "content/file/c9d8809a21ab421eae753d788da8f8e3.png",
+   "pn": "Silas",
+   "t": 1,
+   "tid": "18",
+   "tim": "content/file/d4ac9675b44944039d463837f888cb1c.svg",
+   "trp": 2367000
+  },
+  "dt": "2026-11-14T06:21:10Z",
+  "t": 15
+ },
+ "13379975797": {
+  "data": {
+   "pi": "1978",
+   "pim": "content/file/58a51dcb3fef41de90e23a162e7fe44e.png",
+   "pn": "Torunarigha",
+   "slr": "Maxin",
+   "t": 2,
+   "tid": "6",
+   "tim": "content/file/c9b7d8772f324f9badeb285af4c5810a.svg",
+   "trp": 7106961
+  },
+  "dt": "2026-11-14T06:24:47Z",
+  "t": 15
+ },
+ "13380188173": {
+  "data": {
+   "byr": "Yannick",
+   "pi": "3279",
+   "pim": "content/file/dd5850f8ec6e4b9591721e188bed102d.png",
+   "pn": "Vušković",
+   "t": 1,
+   "tid": "6",
+   "tim": "content/file/c9b7d8772f324f9badeb285af4c5810a.svg",
+   "trp": 3000988
+  },
+  "dt": "2026-11-14T06:58:35Z",
+  "t": 15
+ },
+ "13380297079": {
+  "data": {
+   "byr": "Maxin",
+   "pi": "7167",
+   "pim": "content/file/155288638ca9459bbebfab0684e818ef.png",
+   "pn": "Lynen",
+   "slr": "Cello",
+   "t": 1,
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg",
+   "trp": 7900000
+  },
+  "dt": "2026-11-14T07:15:16Z",
+  "t": 15
+ },
+ "13380360853": {
+  "data": {
+   "fn": "Matheo",
+   "iposl": false,
+   "ln": "Raab",
+   "mv": 500000,
+   "pi": "3419",
+   "pim": "content/file/6f65c492a85a491b94cd3b8a37bae6f8.png",
+   "tid": "40",
+   "tim": "content/file/8f4c7c08ee9b4dca85c28260fc5917bd.svg"
+  },
+  "dt": "2026-11-14T07:25:02Z",
+  "t": 3
+ },
+ "13380430876": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "2068",
+   "pim": "content/file/b356ec2b4bb34ae28c670dafbe1077c8.png",
+   "pn": "Zagadou",
+   "t": 1,
+   "tid": "9",
+   "tim": "content/file/9a1bb78d0ccf45f895797c0c6d8c4d40.svg",
+   "trp": 2032222
+  },
+  "dt": "2026-11-14T07:35:59Z",
+  "t": 15
+ },
+ "13380793042": {
+  "data": {
+   "fn": "Philipp",
+   "iposl": false,
+   "ln": "Lienhart",
+   "mv": 20197169,
+   "pi": "2084",
+   "pim": "content/file/748f11f6c0294a41850137ab1c162436.png",
+   "prurl": "pool/players/2084.jpg",
+   "tid": "5",
+   "tim": "content/file/6c1a9f14b668493283f966834891aa70.svg"
+  },
+  "dt": "2026-11-14T08:30:14Z",
+  "t": 3
+ },
+ "13380990322": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "9776",
+   "pim": "content/file/4b987894fd8842a69a0341460d5ebc51.png",
+   "pn": "Maksimović",
+   "t": 1,
+   "tid": "43",
+   "tim": "content/file/29ceb88867954b548ca9e27d39d050c2.svg",
+   "trp": 4292048
+  },
+  "dt": "2026-11-14T09:00:26Z",
+  "t": 15
+ },
+ "13381213069": {
+  "data": {
+   "fn": "Louis",
+   "iposl": false,
+   "ln": "Lemke",
+   "mv": 2529941,
+   "pi": "13433",
+   "pim": "content/file/46eac50def834b9983f1475d94d28249.png",
+   "tid": "6",
+   "tim": "content/file/c9b7d8772f324f9badeb285af4c5810a.svg"
+  },
+  "dt": "2026-11-14T09:35:30Z",
+  "t": 3
+ },
+ "13381597609": {
+  "data": {
+   "fn": "Lukas",
+   "iposl": false,
+   "ln": "Klostermann",
+   "mv": 500000,
+   "pi": "1333",
+   "pim": "content/file/91ea3cbf0389453ca1c0add22d52e089.png",
+   "prurl": "pool/players/1333.jpg",
+   "tid": "43",
+   "tim": "content/file/29ceb88867954b548ca9e27d39d050c2.svg"
+  },
+  "dt": "2026-11-14T10:38:45Z",
+  "t": 3
+ },
+ "13381786453": {
+  "data": {
+   "pi": "9776",
+   "pim": "content/file/4b987894fd8842a69a0341460d5ebc51.png",
+   "pn": "Maksimović",
+   "slr": "Baumhaus",
+   "t": 2,
+   "tid": "43",
+   "tim": "content/file/29ceb88867954b548ca9e27d39d050c2.svg",
+   "trp": 4292047
+  },
+  "dt": "2026-11-14T11:11:52Z",
+  "t": 15
+ },
+ "13381797388": {
+  "data": {
+   "pi": "17179",
+   "pim": "content/file/ab4510d59bd1409b92acd6f3c8755c34.png",
+   "pn": "Nakuzola",
+   "slr": "Charco8",
+   "t": 2,
+   "tid": "18",
+   "tim": "content/file/d4ac9675b44944039d463837f888cb1c.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-14T11:13:43Z",
+  "t": 15
+ },
+ "13381987369": {
+  "data": {
+   "fn": "Maxime",
+   "iposl": false,
+   "ln": "Estève",
+   "mv": 4389641,
+   "pi": "15376",
+   "pim": "content/file/a7416c976f85479b8ca67947eda7ef58.png",
+   "tid": "43",
+   "tim": "content/file/29ceb88867954b548ca9e27d39d050c2.svg"
+  },
+  "dt": "2026-11-14T11:48:06Z",
+  "t": 3
+ },
+ "13382037955": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "7696",
+   "pim": "content/file/ab74d9253f714c34b29783c84700fd13.png",
+   "pn": "Labrović",
+   "t": 1,
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg",
+   "trp": 500252
+  },
+  "dt": "2026-11-14T11:57:03Z",
+  "t": 15
+ },
+ "13382331553": {
+  "data": {
+   "fn": "Sota",
+   "iposl": false,
+   "ln": "Kawasaki",
+   "mv": 500000,
+   "pi": "11261",
+   "pim": "content/file/4678b1fe37904abeb5122cf3927324dc.png",
+   "tid": "18",
+   "tim": "content/file/d4ac9675b44944039d463837f888cb1c.svg"
+  },
+  "dt": "2026-11-14T12:51:24Z",
+  "t": 3
+ },
+ "13382360320": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "2069",
+   "pim": "content/file/6dbad3a67b1c4ffa892f8bef224e9f85.png",
+   "pn": "Hübers",
+   "t": 1,
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg",
+   "trp": 500019
+  },
+  "dt": "2026-11-14T12:57:15Z",
+  "t": 15
+ },
+ "13382491657": {
+  "data": {
+   "pi": "2069",
+   "pim": "content/file/6dbad3a67b1c4ffa892f8bef224e9f85.png",
+   "pn": "Hübers",
+   "slr": "Baumhaus",
+   "t": 2,
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-14T13:21:50Z",
+  "t": 15
  }
 }
