@@ -18218,5 +18218,139 @@
   },
   "dt": "2026-11-17T02:43:29Z",
   "t": 3
+ },
+ "13404550612": {
+  "data": {
+   "fn": "Adrian",
+   "iposl": false,
+   "ln": "Gantenbein",
+   "mv": 1554106,
+   "pi": "8235",
+   "pim": "content/file/20ff107cb10149319ad76cc948de9e70.png",
+   "tid": "8",
+   "tim": "content/file/fed743ec085c41a9b2453875157257fe.svg"
+  },
+  "dt": "2026-11-17T06:04:57Z",
+  "t": 3
+ },
+ "13405029658": {
+  "data": {
+   "fn": "Ransford",
+   "iposl": false,
+   "ln": "Königsdörffer",
+   "mv": 3248086,
+   "pi": "3318",
+   "pim": "content/file/4f3abfff728148fda062801c5af46204.png",
+   "tid": "18",
+   "tim": "content/file/d4ac9675b44944039d463837f888cb1c.svg"
+  },
+  "dt": "2026-11-17T07:07:06Z",
+  "t": 3
+ },
+ "13405230271": {
+  "data": {
+   "byr": "Hasan",
+   "pi": "7394",
+   "pim": "content/file/6faaaadc0c43454aa7802b77b1455f2e.png",
+   "pn": "Amoako",
+   "t": 1,
+   "tid": "6",
+   "tim": "content/file/c9b7d8772f324f9badeb285af4c5810a.svg",
+   "trp": 1400000
+  },
+  "dt": "2026-11-17T07:36:48Z",
+  "t": 15
+ },
+ "13405448407": {
+  "data": {
+   "fn": "Ellyes",
+   "iposl": false,
+   "ln": "Skhiri",
+   "mv": 1956537,
+   "pi": "2718",
+   "pim": "content/file/1274d4acfc8845a789f74d858afe1168.png",
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg"
+  },
+  "dt": "2026-11-17T08:10:27Z",
+  "t": 3
+ },
+ "13405991401": {
+  "data": {
+   "pi": "3193",
+   "pim": "content/file/bc4ccccad9f44c0fa4e3f4e7a406cb75.png",
+   "pn": "Tiago Tomás",
+   "slr": "Rooth",
+   "t": 2,
+   "tid": "9",
+   "tim": "content/file/9a1bb78d0ccf45f895797c0c6d8c4d40.svg",
+   "trp": 5692015
+  },
+  "dt": "2026-11-17T09:40:28Z",
+  "t": 15
+ },
+ "13407295564": {
+  "data": {
+   "fn": "Ko",
+   "iposl": false,
+   "ln": "Itakura",
+   "mv": 3673790,
+   "pi": "3129",
+   "pim": "content/file/4b21780a283045729069fef7f989f200.png",
+   "tid": "15",
+   "tim": "content/file/7178ef92ad0747a5ad1a05d0783f5088.svg"
+  },
+  "dt": "2026-11-17T13:41:52Z",
+  "t": 3
+ },
+ "13407640294": {
+  "data": {
+   "bn": 100000,
+   "day": 43
+  },
+  "dt": "2026-11-17T14:49:27Z",
+  "t": 22
+ },
+ "13407642913": {
+  "data": {
+   "fn": "Philipp",
+   "iposl": false,
+   "ln": "Sander",
+   "mv": 5618875,
+   "pi": "2560",
+   "pim": "content/file/fb578835ac86440a8189e44877f9bcc8.png",
+   "tid": "15",
+   "tim": "content/file/7178ef92ad0747a5ad1a05d0783f5088.svg"
+  },
+  "dt": "2026-11-17T14:50:03Z",
+  "t": 3
+ },
+ "13407811045": {
+  "data": {
+   "byr": "Rooth",
+   "pi": "1991",
+   "pim": "content/file/13835e113e4f40d986f924b517690435.png",
+   "pn": "Upamecano",
+   "t": 1,
+   "tid": "2",
+   "tim": "content/file/ff70df040a9f4179a7b45219225a2273.svg",
+   "trp": 41512345
+  },
+  "dt": "2026-11-17T15:23:24Z",
+  "t": 15
+ },
+ "13407976378": {
+  "data": {
+   "fn": "Mathis",
+   "iposl": false,
+   "ln": "Albert",
+   "mv": 500000,
+   "pi": "11101",
+   "pim": "content/file/6a7dffe79e6d43c195ca10b02c0957c6.png",
+   "tid": "3",
+   "tim": "content/file/dc3d63ae79bf4282a4107bafcd572b99.svg"
+  },
+  "dt": "2026-11-17T15:56:11Z",
+  "t": 3
  }
 }
