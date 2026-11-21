@@ -19971,5 +19971,323 @@
   },
   "dt": "2026-11-20T23:01:26Z",
   "t": 3
+ },
+ "13437401737": {
+  "data": {
+   "fn": "Albert Frank",
+   "iposl": false,
+   "ln": "Millgramm",
+   "mv": 500000,
+   "pi": "12262",
+   "pim": "content/file/0635ef3343fb4b138fd946cc4a199637.png",
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg"
+  },
+  "dt": "2026-11-21T00:06:28Z",
+  "t": 3
+ },
+ "13437624280": {
+  "data": {
+   "byr": "Rooth",
+   "pi": "2864",
+   "pim": "content/file/47efb7c32b294c238dcddcc3bd26ac21.png",
+   "pn": "Collins",
+   "t": 1,
+   "tid": "4",
+   "tim": "content/file/422de82bee3b47eb898699d6d27095ba.svg",
+   "trp": 5285555
+  },
+  "dt": "2026-11-21T00:45:53Z",
+  "t": 15
+ },
+ "13437777415": {
+  "data": {
+   "fn": "Max",
+   "iposl": false,
+   "ln": "Finkgräfe",
+   "mv": 500000,
+   "pi": "7239",
+   "pim": "content/file/14ced344f69a48a5aeed3cbdcd5938da.png",
+   "tid": "43",
+   "tim": "content/file/29ceb88867954b548ca9e27d39d050c2.svg"
+  },
+  "dt": "2026-11-21T01:08:42Z",
+  "t": 3
+ },
+ "13437908440": {
+  "data": {
+   "byr": "Baumann",
+   "pi": "9224",
+   "pim": "content/file/9f0800bc0d18427ebfd3b4a9089dd165.png",
+   "pn": "Zimmerschied",
+   "t": 1,
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg",
+   "trp": 3676789
+  },
+  "dt": "2026-11-21T01:35:23Z",
+  "t": 15
+ },
+ "13438035142": {
+  "data": {
+   "byr": "Rooth",
+   "pi": "3336",
+   "pim": "content/file/197aeeb1c0994cb68e398212e6941782.png",
+   "pn": "Marino",
+   "t": 1,
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg",
+   "trp": 5825555
+  },
+  "dt": "2026-11-21T02:01:39Z",
+  "t": 15
+ },
+ "13438134550": {
+  "data": {
+   "fn": "Frederik",
+   "iposl": false,
+   "ln": "Rönnow",
+   "mv": 10289917,
+   "pi": "2279",
+   "pim": "content/file/a74539007fa347f28af0ce83caafef6f.png",
+   "prurl": "pool/players/2279.jpg",
+   "tid": "40",
+   "tim": "content/file/8f4c7c08ee9b4dca85c28260fc5917bd.svg"
+  },
+  "dt": "2026-11-21T02:18:54Z",
+  "t": 3
+ },
+ "13438433455": {
+  "data": {
+   "fn": "Finn",
+   "iposl": false,
+   "ln": "Porath",
+   "mv": 500000,
+   "pi": "1691",
+   "pim": "content/file/250d4c6c00a74d8b9604ba54ec4385fd.png",
+   "prurl": "pool/players/1691.jpg",
+   "tid": "8",
+   "tim": "content/file/fed743ec085c41a9b2453875157257fe.svg"
+  },
+  "dt": "2026-11-21T03:22:56Z",
+  "t": 3
+ },
+ "13438480822": {
+  "data": {
+   "bn": 100000,
+   "day": 47
+  },
+  "dt": "2026-11-21T03:33:03Z",
+  "t": 22
+ },
+ "13438753102": {
+  "data": {
+   "fn": "Christopher",
+   "iposl": false,
+   "ln": "Trimmel",
+   "mv": 500000,
+   "pi": "2400",
+   "pim": "content/file/0133043125be433d91c3b93eb502aebe.png",
+   "tid": "40",
+   "tim": "content/file/8f4c7c08ee9b4dca85c28260fc5917bd.svg"
+  },
+  "dt": "2026-11-21T04:32:04Z",
+  "t": 3
+ },
+ "13439158057": {
+  "data": {
+   "pi": "12368",
+   "pim": "content/file/3d7ab89b5e874e77bbb6b1fb6724745f.png",
+   "pn": "Tangvik",
+   "slr": "Hasan",
+   "t": 2,
+   "tid": "6",
+   "tim": "content/file/c9b7d8772f324f9badeb285af4c5810a.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-21T05:54:23Z",
+  "t": 15
+ },
+ "13439245966": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "6176",
+   "pim": "content/file/5320dfb79fb348369e61599e552840b0.png",
+   "pn": "Seiwald",
+   "t": 1,
+   "tid": "43",
+   "tim": "content/file/29ceb88867954b548ca9e27d39d050c2.svg",
+   "trp": 2528052
+  },
+  "dt": "2026-11-21T06:12:12Z",
+  "t": 15
+ },
+ "13439334664": {
+  "data": {
+   "byr": "Hasan",
+   "pi": "663",
+   "pim": "content/file/0cdcdb27004443c09d112462f32ace2c.png",
+   "pn": "Andrich",
+   "t": 1,
+   "tid": "7",
+   "tim": "content/file/e06a055a6eaf4fd7bebfadb35037f957.svg",
+   "trp": 6631420
+  },
+  "dt": "2026-11-21T06:26:50Z",
+  "t": 15
+ },
+ "13439456635": {
+  "data": {
+   "fn": "Christian",
+   "iposl": true,
+   "ln": "Kofane",
+   "mv": 6067261,
+   "pi": "11513",
+   "pim": "content/file/ce8356c51b154a87a40a56f723f2e3e3.png",
+   "tid": "7",
+   "tim": "content/file/e06a055a6eaf4fd7bebfadb35037f957.svg"
+  },
+  "dt": "2026-11-21T06:44:11Z",
+  "t": 3
+ },
+ "13439867941": {
+  "data": {
+   "fn": "Valentin",
+   "iposl": false,
+   "ln": "Gendrey",
+   "mv": 500000,
+   "pi": "9598",
+   "pim": "content/file/963aa0e9a1bf4537bba171631d3ef595.png",
+   "tid": "14",
+   "tim": "content/file/5212904732a04199aab426e44067347c.svg"
+  },
+  "dt": "2026-11-21T07:46:08Z",
+  "t": 3
+ },
+ "13440704236": {
+  "data": {
+   "fn": "Fábio",
+   "iposl": false,
+   "ln": "Vieira",
+   "mv": 8950089,
+   "pi": "11967",
+   "pim": "content/file/c93ccb5240654ea0832be06471767031.png",
+   "tid": "6",
+   "tim": "content/file/c9b7d8772f324f9badeb285af4c5810a.svg"
+  },
+  "dt": "2026-11-21T09:59:16Z",
+  "t": 3
+ },
+ "13440713725": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "11875",
+   "pim": "content/file/0825c755c7df4f7ba70b3f8922154f99.png",
+   "pn": "van den Berg",
+   "t": 1,
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg",
+   "trp": 501124
+  },
+  "dt": "2026-11-21T10:00:33Z",
+  "t": 15
+ },
+ "13441049089": {
+  "data": {
+   "fn": "Kauã",
+   "iposl": false,
+   "ln": "Santos",
+   "mv": 500000,
+   "pi": "7275",
+   "pim": "content/file/aa2d99e5647f41be9c144d86afcdde54.png",
+   "tid": "4",
+   "tim": "content/file/422de82bee3b47eb898699d6d27095ba.svg"
+  },
+  "dt": "2026-11-21T11:01:19Z",
+  "t": 3
+ },
+ "13441270918": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "2126",
+   "pim": "content/file/4881796043e3415988bd7340d2f89b43.png",
+   "pn": "Kühn",
+   "t": 1,
+   "tid": "15",
+   "tim": "content/file/7178ef92ad0747a5ad1a05d0783f5088.svg",
+   "trp": 1185022
+  },
+  "dt": "2026-11-21T11:44:11Z",
+  "t": 15
+ },
+ "13441405657": {
+  "data": {
+   "fn": "Sebastian",
+   "iposl": false,
+   "ln": "Klaas",
+   "mv": 500000,
+   "pi": "3491",
+   "pim": "content/file/889217c751e5403eaf39162d4dc54b9a.png",
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg"
+  },
+  "dt": "2026-11-21T12:07:24Z",
+  "t": 3
+ },
+ "13441443055": {
+  "data": {
+   "pi": "11875",
+   "pim": "content/file/0825c755c7df4f7ba70b3f8922154f99.png",
+   "pn": "van den Berg",
+   "slr": "Baumhaus",
+   "t": 2,
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-21T12:13:58Z",
+  "t": 15
+ },
+ "13441453297": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "9600",
+   "pim": "content/file/c677b3706079488a8ee0283db8fdd970.png",
+   "pn": "Schlager",
+   "t": 1,
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg",
+   "trp": 508707
+  },
+  "dt": "2026-11-21T12:16:02Z",
+  "t": 15
+ },
+ "13441463875": {
+  "data": {
+   "pi": "7226",
+   "pim": "content/file/8558eff47626439593b2acd71e400ab3.png",
+   "pn": "Kane",
+   "slr": "WaveDaBreaker",
+   "t": 2,
+   "tid": "2",
+   "tim": "content/file/ff70df040a9f4179a7b45219225a2273.svg",
+   "trp": 65923375
+  },
+  "dt": "2026-11-21T12:17:41Z",
+  "t": 15
+ },
+ "13441770349": {
+  "data": {
+   "fn": "Timur",
+   "iposl": false,
+   "ln": "Gayret",
+   "mv": 500000,
+   "pi": "14914",
+   "pim": "content/file/174077d2fba447fbb8a0e46a12d28245.png",
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg"
+  },
+  "dt": "2026-11-21T13:17:34Z",
+  "t": 3
  }
 }
