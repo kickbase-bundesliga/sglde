@@ -250,11 +250,12 @@ def auswerten(jetzt=None):
                     and t["pi"] in kids and t["dt"] >= st_start]
             markt = [t for t in verk if t["gegen"] == "Markt" and id(t) not in benutzt]
             an_manager = [t for t in verk if t["gegen"] != "Markt"]
-            erledigt = markt[0] if markt else None
-            if erledigt:
-                benutzt.add(id(erledigt))
             ausnahme = next((a for a in ausnahmen if str(a.get("st")) == str(st)
                              and str(a.get("manager")) == u), None)
+            # Eine Ausnahme (Sonderregelung) verbraucht keinen Verkauf - sonst fehlt er einer spaeteren Pflicht
+            erledigt = markt[0] if markt and not ausnahme else None
+            if erledigt:
+                benutzt.add(id(erledigt))
             # Strafe: je angefangenem Tag nach der Frist ein zusaetzlicher Verkauf aus der Startelf
             bezug = erledigt["dt"] if erledigt else jetzt
             strafe = 0
