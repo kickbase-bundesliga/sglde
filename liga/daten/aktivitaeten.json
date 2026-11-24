@@ -21741,5 +21741,347 @@
   },
   "dt": "2026-11-24T05:27:23Z",
   "t": 15
+ },
+ "13467437281": {
+  "data": {
+   "fn": "Frederik",
+   "iposl": false,
+   "ln": "Schmahl",
+   "mv": 1094195,
+   "pi": "8296",
+   "pim": "content/file/4fee028433d344a29b6c94e9ee65fa19.png",
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg"
+  },
+  "dt": "2026-11-24T05:48:15Z",
+  "t": 3
+ },
+ "13467865720": {
+  "data": {
+   "bn": 100000,
+   "day": 50
+  },
+  "dt": "2026-11-24T06:42:49Z",
+  "t": 22
+ },
+ "13467871723": {
+  "data": {
+   "pi": "7282",
+   "pim": "content/file/581d084f390f47a38c3d2d35085fb1e4.png",
+   "pn": "Deman",
+   "slr": "Poeti",
+   "t": 2,
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg",
+   "trp": 11019037
+  },
+  "dt": "2026-11-24T06:43:42Z",
+  "t": 15
+ },
+ "13468068565": {
+  "data": {
+   "byr": "Charco8",
+   "pi": "7543",
+   "pim": "content/file/901ac71d98064e48b7b250786d8ac1d2.png",
+   "pn": "Moerstedt",
+   "t": 1,
+   "tid": "14",
+   "tim": "content/file/5212904732a04199aab426e44067347c.svg",
+   "trp": 3980643
+  },
+  "dt": "2026-11-24T07:12:02Z",
+  "t": 15
+ },
+ "13468241437": {
+  "data": {
+   "byr": "Freezy",
+   "pi": "9684",
+   "pim": "content/file/6fcd0e7bf78f4355ac28aecef9efb589.png",
+   "pn": "Claude-Maurice",
+   "slr": "Hasan",
+   "t": 1,
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg",
+   "trp": 11100000
+  },
+  "dt": "2026-11-24T07:38:00Z",
+  "t": 15
+ },
+ "13468306789": {
+  "data": {
+   "byr": "Freezy",
+   "pi": "3026",
+   "pim": "content/file/efd54edaa770405ba5107ab4d8e895ec.png",
+   "pn": "Günther",
+   "slr": "mircodinho",
+   "t": 1,
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg",
+   "trp": 8400000
+  },
+  "dt": "2026-11-24T07:47:16Z",
+  "t": 15
+ },
+ "13468334977": {
+  "data": {
+   "byr": "Oli",
+   "pi": "1955",
+   "pim": "content/file/a76d8d4a531548f58ceb241fe4958952.png",
+   "pn": "Burke",
+   "t": 1,
+   "tid": "40",
+   "tim": "content/file/8f4c7c08ee9b4dca85c28260fc5917bd.svg",
+   "trp": 2222996
+  },
+  "dt": "2026-11-24T07:51:30Z",
+  "t": 15
+ },
+ "13468382461": {
+  "data": {
+   "fn": "Young-Woo",
+   "iposl": false,
+   "ln": "Seol",
+   "mv": 831410,
+   "pi": "13806",
+   "pim": "content/file/e7ba68f831b843ba9e8251edb80f7989.png",
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg"
+  },
+  "dt": "2026-11-24T07:59:19Z",
+  "t": 3
+ },
+ "13468550998": {
+  "data": {
+   "pi": "10916",
+   "pim": "content/file/130406d171884bb486982e8fe381150c.png",
+   "pn": "Ayhan",
+   "slr": "Zügi",
+   "t": 2,
+   "tid": "8",
+   "tim": "content/file/fed743ec085c41a9b2453875157257fe.svg",
+   "trp": 4313367
+  },
+  "dt": "2026-11-24T08:27:27Z",
+  "t": 15
+ },
+ "13468756378": {
+  "data": {
+   "fn": "Ísak",
+   "iposl": false,
+   "ln": "Jóhannesson",
+   "mv": 4105136,
+   "pi": "7219",
+   "pim": "content/file/2922eb48335343ccb79b49b03af03818.png",
+   "tid": "28",
+   "tim": "content/file/dca70c4089fd4623932b245c0e81eaba.svg"
+  },
+  "dt": "2026-11-24T09:00:22Z",
+  "t": 3
+ },
+ "13477075471": {
+  "data": {
+   "d": "Score at least 200 points with a player",
+   "n": "Top scorer",
+   "t": 300
+  },
+  "dt": "2026-11-24T09:32:44Z",
+  "t": 26
+ },
+ "13479910783": {
+  "data": {
+   "byr": "WaveDaBreaker",
+   "pi": "2764",
+   "pim": "content/file/4f4bc9f6569e49588aa7dd39288b614f.png",
+   "pn": "Keitel",
+   "t": 1,
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg",
+   "trp": 4213131
+  },
+  "dt": "2026-11-24T09:58:10Z",
+  "t": 15
+ },
+ "13479959419": {
+  "data": {
+   "fn": "Manuel",
+   "iposl": false,
+   "ln": "Neuer",
+   "mv": 3558016,
+   "pi": "237",
+   "pim": "content/file/bf993bb6d6914136b11177795c5f77a9.png",
+   "prurl": "pool/players/237.jpg",
+   "tid": "2",
+   "tim": "content/file/ff70df040a9f4179a7b45219225a2273.svg"
+  },
+  "dt": "2026-11-24T10:05:41Z",
+  "t": 3
+ },
+ "13480342258": {
+  "data": {
+   "byr": "Oli",
+   "pi": "8355",
+   "pim": "content/file/eee3a63f6cd84553ac20c6854134da5c.png",
+   "pn": "Banks",
+   "t": 1,
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg",
+   "trp": 3700999
+  },
+  "dt": "2026-11-24T11:13:38Z",
+  "t": 15
+ },
+ "13480673029": {
+  "data": {
+   "fn": "Robin",
+   "iposl": false,
+   "ln": "Hranác",
+   "mv": 1115289,
+   "pi": "7750",
+   "pim": "content/file/378ad76b9745472cb56cc5de220ea9f9.png",
+   "tid": "14",
+   "tim": "content/file/5212904732a04199aab426e44067347c.svg"
+  },
+  "dt": "2026-11-24T12:14:51Z",
+  "t": 3
+ },
+ "13481483218": {
+  "data": {
+   "byr": "Freezy",
+   "pi": "51",
+   "pim": "content/file/9ecae4fccb2648b8b2bd92c4cac3f955.png",
+   "pn": "Khedira",
+   "t": 1,
+   "tid": "40",
+   "tim": "content/file/8f4c7c08ee9b4dca85c28260fc5917bd.svg",
+   "trp": 8370000
+  },
+  "dt": "2026-11-24T14:55:49Z",
+  "t": 15
+ },
+ "13481640115": {
+  "data": {
+   "pi": "4596",
+   "pim": "content/file/fc98ceda9d134bd09d5526a600465611.png",
+   "pn": "Gruda",
+   "slr": "kianrm9",
+   "t": 2,
+   "tid": "43",
+   "tim": "content/file/29ceb88867954b548ca9e27d39d050c2.svg",
+   "trp": 22941827
+  },
+  "dt": "2026-11-24T15:26:34Z",
+  "t": 15
+ },
+ "13481645731": {
+  "data": {
+   "pi": "2736",
+   "pim": "content/file/f2e48e2f879643559eb9d2cdb6db0d7a.png",
+   "pn": "Bensebaini",
+   "slr": "Gandalf der Grüne",
+   "t": 2,
+   "tid": "3",
+   "tim": "content/file/dc3d63ae79bf4282a4107bafcd572b99.svg",
+   "trp": 6032304
+  },
+  "dt": "2026-11-24T15:27:40Z",
+  "t": 15
+ },
+ "13481646121": {
+  "data": {
+   "pi": "11170",
+   "pim": "content/file/30dea41b80454a638771929f17e0d368.png",
+   "pn": "Müller",
+   "slr": "Gandalf der Grüne",
+   "t": 2,
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg",
+   "trp": 3523353
+  },
+  "dt": "2026-11-24T15:27:48Z",
+  "t": 15
+ },
+ "13481655847": {
+  "data": {
+   "pi": "10122",
+   "pim": "content/file/278ee138191a434c98f6a644a68e553c.png",
+   "pn": "Gruber",
+   "slr": "kianrm9",
+   "t": 2,
+   "tid": "18",
+   "tim": "content/file/d4ac9675b44944039d463837f888cb1c.svg",
+   "trp": 8817262
+  },
+  "dt": "2026-11-24T15:29:09Z",
+  "t": 15
+ },
+ "13481658214": {
+  "data": {
+   "fn": "Ron",
+   "iposl": false,
+   "ln": "Schallenberg",
+   "mv": 500000,
+   "pi": "2876",
+   "pim": "content/file/9f2d8e42f6bc438a9b4808262a3b2349.png",
+   "tid": "8",
+   "tim": "content/file/fed743ec085c41a9b2453875157257fe.svg"
+  },
+  "dt": "2026-11-24T15:30:09Z",
+  "t": 3
+ },
+ "13481834932": {
+  "data": {
+   "pi": "1671",
+   "pim": "content/file/08b903ec758e4ca3be71c96efaf7d324.png",
+   "pn": "Prömel",
+   "slr": "Charco8",
+   "t": 2,
+   "tid": "9",
+   "tim": "content/file/9a1bb78d0ccf45f895797c0c6d8c4d40.svg",
+   "trp": 13341882
+  },
+  "dt": "2026-11-24T16:07:23Z",
+  "t": 15
+ },
+ "13481932885": {
+  "data": {
+   "byr": "Hasan",
+   "pi": "9605",
+   "pim": "content/file/02b24cefd3da410ca1d4639a2fb7ccac.png",
+   "pn": "Grønbæk",
+   "t": 1,
+   "tid": "6",
+   "tim": "content/file/c9b7d8772f324f9badeb285af4c5810a.svg",
+   "trp": 14283829
+  },
+  "dt": "2026-11-24T16:26:23Z",
+  "t": 15
+ },
+ "13481972356": {
+  "data": {
+   "fn": "Leo",
+   "iposl": false,
+   "ln": "Sauer",
+   "mv": 864423,
+   "pi": "7781",
+   "pim": "content/file/79854e5f8e024f4cac5b935b26f557ef.png",
+   "tid": "9",
+   "tim": "content/file/9a1bb78d0ccf45f895797c0c6d8c4d40.svg"
+  },
+  "dt": "2026-11-24T16:34:15Z",
+  "t": 3
+ },
+ "13482022006": {
+  "data": {
+   "pi": "1645",
+   "pim": "content/file/7b762754c912496287f84b3c38b24a82.png",
+   "pn": "Eggestein",
+   "slr": "Zügi",
+   "t": 2,
+   "tid": "5",
+   "tim": "content/file/6c1a9f14b668493283f966834891aa70.svg",
+   "trp": 23035923
+  },
+  "dt": "2026-11-24T16:44:22Z",
+  "t": 15
  }
 }
