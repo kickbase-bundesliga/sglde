@@ -22284,5 +22284,279 @@
   },
   "dt": "2026-11-25T01:07:54Z",
   "t": 3
+ },
+ "13486647832": {
+  "data": {
+   "fn": "Sima",
+   "iposl": false,
+   "ln": "Suso",
+   "mv": 500000,
+   "pi": "7336",
+   "pim": "content/file/183351daddfd4c36b0c80c411b0e061c.png",
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg"
+  },
+  "dt": "2026-11-25T05:29:14Z",
+  "t": 3
+ },
+ "13487569612": {
+  "data": {
+   "fn": "Jan",
+   "iposl": false,
+   "ln": "Gyamerah",
+   "mv": 1947098,
+   "pi": "859",
+   "pim": "content/file/605c8e04a1e448d28636a175391a6394.png",
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg"
+  },
+  "dt": "2026-11-25T07:33:18Z",
+  "t": 3
+ },
+ "13487999260": {
+  "data": {
+   "fn": "Cole",
+   "iposl": false,
+   "ln": "Campbell",
+   "mv": 4156436,
+   "pi": "7441",
+   "pim": "content/file/669458754d454557bed29bb138f25294.png",
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg"
+  },
+  "dt": "2026-11-25T08:43:26Z",
+  "t": 3
+ },
+ "13488184099": {
+  "data": {
+   "bn": 100000,
+   "day": 51
+  },
+  "dt": "2026-11-25T09:15:47Z",
+  "t": 22
+ },
+ "13488389701": {
+  "data": {
+   "fn": "Felix",
+   "iposl": false,
+   "ln": "Agu",
+   "mv": 500000,
+   "pi": "2842",
+   "pim": "content/file/d3aec548a0d84afcb6a8f6c90cc09e72.png",
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg"
+  },
+  "dt": "2026-11-25T09:52:33Z",
+  "t": 3
+ },
+ "13488553669": {
+  "data": {
+   "byr": "Gandalf der Grüne",
+   "pi": "7781",
+   "pim": "content/file/79854e5f8e024f4cac5b935b26f557ef.png",
+   "pn": "Sauer",
+   "t": 1,
+   "tid": "9",
+   "tim": "content/file/9a1bb78d0ccf45f895797c0c6d8c4d40.svg",
+   "trp": 2125895
+  },
+  "dt": "2026-11-25T10:23:49Z",
+  "t": 15
+ },
+ "13488752851": {
+  "data": {
+   "fn": "Nathan",
+   "iposl": false,
+   "ln": "De Cat",
+   "mv": 500000,
+   "pi": "15262",
+   "pim": "content/file/8c55d861342c440b9966f1cd6dc86f29.png",
+   "tid": "14",
+   "tim": "content/file/5212904732a04199aab426e44067347c.svg"
+  },
+  "dt": "2026-11-25T11:01:36Z",
+  "t": 3
+ },
+ "13488846604": {
+  "data": {
+   "byr": "Cello",
+   "pi": "14926",
+   "pim": "content/file/5cb0e397fead443c8b6edad320c05fb5.png",
+   "pn": "Soylu",
+   "t": 1,
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-25T11:19:24Z",
+  "t": 15
+ },
+ "13489074100": {
+  "data": {
+   "fn": "Noah",
+   "iposl": false,
+   "ln": "Darvich",
+   "mv": 1232608,
+   "pi": "9384",
+   "pim": "content/file/a152e089e0e747c58731e76c4f5b58e2.png",
+   "tid": "77",
+   "tim": "content/file/0316d4ec54e94ae4afac4ba34fcec8de.svg"
+  },
+  "dt": "2026-11-25T12:03:04Z",
+  "t": 3
+ },
+ "13489136710": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "577",
+   "pim": "content/file/61c6f55172674b6eb750e6263b23da0d.png",
+   "pn": "Batz",
+   "t": 1,
+   "tid": "15",
+   "tim": "content/file/7178ef92ad0747a5ad1a05d0783f5088.svg",
+   "trp": 17787787
+  },
+  "dt": "2026-11-25T12:14:35Z",
+  "t": 15
+ },
+ "13489416046": {
+  "data": {
+   "fn": "Chrislain",
+   "iposl": false,
+   "ln": "Matsima",
+   "mv": 9372305,
+   "pi": "9642",
+   "pim": "content/file/0337794cdbe74c759f6ea4c6ac9c796b.png",
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg"
+  },
+  "dt": "2026-11-25T13:09:04Z",
+  "t": 3
+ },
+ "13489724482": {
+  "data": {
+   "pi": "9600",
+   "pim": "content/file/c677b3706079488a8ee0283db8fdd970.png",
+   "pn": "Schlager",
+   "slr": "Baumhaus",
+   "t": 2,
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-25T14:11:58Z",
+  "t": 15
+ },
+ "13489834606": {
+  "data": {
+   "byr": "mircodinho",
+   "pi": "1223",
+   "pim": "content/file/0e7e99776b0c460eaaf8702878b90869.png",
+   "pn": "Friedrich",
+   "t": 1,
+   "tid": "40",
+   "tim": "content/file/8f4c7c08ee9b4dca85c28260fc5917bd.svg",
+   "trp": 8699999
+  },
+  "dt": "2026-11-25T14:33:31Z",
+  "t": 15
+ },
+ "13490065840": {
+  "data": {
+   "fn": "Lorenz",
+   "iposl": false,
+   "ln": "Assignon",
+   "mv": 1990113,
+   "pi": "11043",
+   "pim": "content/file/9a09f4c605aa4708839026cfa823e807.png",
+   "tid": "9",
+   "tim": "content/file/9a1bb78d0ccf45f895797c0c6d8c4d40.svg"
+  },
+  "dt": "2026-11-25T15:20:59Z",
+  "t": 3
+ },
+ "13490181970": {
+  "data": {
+   "byr": "Baumhaus",
+   "pi": "13806",
+   "pim": "content/file/e7ba68f831b843ba9e8251edb80f7989.png",
+   "pn": "Seol",
+   "t": 1,
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg",
+   "trp": 1140141
+  },
+  "dt": "2026-11-25T15:44:45Z",
+  "t": 15
+ },
+ "13490340916": {
+  "data": {
+   "pi": "13806",
+   "pim": "content/file/e7ba68f831b843ba9e8251edb80f7989.png",
+   "pn": "Seol",
+   "slr": "Baumhaus",
+   "t": 2,
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg",
+   "trp": 1138930
+  },
+  "dt": "2026-11-25T16:17:44Z",
+  "t": 15
+ },
+ "13490345977": {
+  "data": {
+   "byr": "Hasan",
+   "pi": "6292",
+   "pim": "content/file/c747e1ad35ed44f4afbc5de1075d8bf1.png",
+   "pn": "Hansen",
+   "t": 1,
+   "tid": "29",
+   "tim": "content/file/ce455adfd794457f9ab90f7bab522812.svg",
+   "trp": 15100000
+  },
+  "dt": "2026-11-25T16:18:37Z",
+  "t": 15
+ },
+ "13490369908": {
+  "data": {
+   "fn": "Max",
+   "iposl": false,
+   "ln": "Rosenfelder",
+   "mv": 3337547,
+   "pi": "7216",
+   "pim": "content/file/e433049f58c743a5959513619885f55b.png",
+   "tid": "5",
+   "tim": "content/file/6c1a9f14b668493283f966834891aa70.svg"
+  },
+  "dt": "2026-11-25T16:22:55Z",
+  "t": 3
+ },
+ "13490382778": {
+  "data": {
+   "byr": "Cello",
+   "pi": "12263",
+   "pim": "content/file/7f5016e415d84f93b2b6636ee3e900cb.png",
+   "pn": "Schnitzer",
+   "t": 1,
+   "tid": "13",
+   "tim": "content/file/8d68c946b9774505b8292adfa910d0a0.svg",
+   "trp": 2898989
+  },
+  "dt": "2026-11-25T16:25:11Z",
+  "t": 15
+ },
+ "13490397928": {
+  "data": {
+   "pi": "14926",
+   "pim": "content/file/5cb0e397fead443c8b6edad320c05fb5.png",
+   "pn": "Soylu",
+   "slr": "Cello",
+   "t": 2,
+   "tid": "10",
+   "tim": "content/file/82f8ba6f2d9e46119e4deac25a0b5480.svg",
+   "trp": 500000
+  },
+  "dt": "2026-11-25T16:28:09Z",
+  "t": 15
  }
 }
