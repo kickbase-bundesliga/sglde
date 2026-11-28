@@ -23695,5 +23695,82 @@
   },
   "dt": "2026-11-27T16:09:20Z",
   "t": 15
+ },
+ "13507588192": {
+  "data": {
+   "pi": "1961",
+   "pim": "content/file/0a28d7fc999e415eb4aba7e837b0384c.png",
+   "pn": "Gnabry",
+   "slr": "Baumann",
+   "tid": "2",
+   "uop": 10000000
+  },
+  "dt": "2026-11-27T16:51:16Z",
+  "t": 27
+ },
+ "13507716838": {
+  "data": {
+   "fn": "Janik",
+   "iposl": false,
+   "ln": "Haberer",
+   "mv": 4577143,
+   "pi": "1553",
+   "pim": "content/file/ce496ba0469a4a3b80d18b665d7466c0.png",
+   "prurl": "pool/players/1553.jpg",
+   "tid": "40",
+   "tim": "content/file/8f4c7c08ee9b4dca85c28260fc5917bd.svg"
+  },
+  "dt": "2026-11-27T17:08:51Z",
+  "t": 3
+ },
+ "13508199217": {
+  "data": {
+   "fn": "Kevin",
+   "iposl": false,
+   "ln": "Müller",
+   "mv": 793731,
+   "pi": "755",
+   "pim": "content/file/9267ef7e0ff04d8d8f68116e2baab8fa.png",
+   "tid": "8",
+   "tim": "content/file/fed743ec085c41a9b2453875157257fe.svg"
+  },
+  "dt": "2026-11-27T18:14:54Z",
+  "t": 3
+ },
+ "13509544483": {
+  "data": {
+   "pi": "4292",
+   "pim": "content/file/78e179f9be5248c887e00608eaee10bc.png",
+   "pn": "Herold",
+   "slr": "Maxin",
+   "t": 2,
+   "tid": "15",
+   "tim": "content/file/7178ef92ad0747a5ad1a05d0783f5088.svg",
+   "trp": 2761320
+  },
+  "dt": "2026-11-27T21:31:46Z",
+  "t": 15
+ },
+ "13510102762": {
+  "data": {
+   "bn": 100000,
+   "day": 54
+  },
+  "dt": "2026-11-27T23:10:31Z",
+  "t": 22
+ },
+ "13510408672": {
+  "data": {
+   "fn": "Robert",
+   "iposl": false,
+   "ln": "Skov",
+   "mv": 500000,
+   "pi": "2717",
+   "pim": "content/file/ebae4e5c0fec43ebaed2b2aae064a346.png",
+   "tid": "40",
+   "tim": "content/file/8f4c7c08ee9b4dca85c28260fc5917bd.svg"
+  },
+  "dt": "2026-11-27T23:47:08Z",
+  "t": 3
  }
 }
